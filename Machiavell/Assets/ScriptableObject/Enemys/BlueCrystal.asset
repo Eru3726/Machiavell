@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c7149fdadf79b40b65a590a1791abc, type: 3}
+  m_Name: BlueCrystal
+  m_EditorClassIdentifier: 
+  enemyType: 1
+  enemyName: BlueCrystal
+  enemySprite: {fileID: -8237601501483590397, guid: 7780ca596b8d1d644b49160065301641, type: 3}
+  enemyMaxHp: 2
+  enemyOffensivePower: 7
+  enemyDefensePower: 5
+  enemyMoveSpeed: 5
+  enemyWaitTime: 5
+  enemyWalkTime: 3
+  enemyChaseSpeed: -1
+  enemyRangeToChase: 25
+  enemyWaitAfterHitting: -1
+  enemyKnockBackPower: -1
+  enemyAria: -1
+  enemyExp: 10
+  enemyBeamAtk: 0
+  enemyGodLodAtk: 0
+  enemyWaveAtk: 0

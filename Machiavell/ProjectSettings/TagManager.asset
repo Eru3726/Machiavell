@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - weapon2
+  - weapon4
+  - weapon1
+  - Crystal
+  - weapon3
+  - Attack
+  - SumBeam
+  - Wave
+  - sannsyou
+  - RedBlast
+  - Beam
+  - grand
+  - weapon5
+  - enemy
+  - GodLod
+  - Angelus
+  - TalisBlast
+  - Laser
+  - Slider
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - axe
+  - bow
+  - crossbow
+  - hammer
+  - lageaxe
+  - largesword
+  - rapier
+  - spear
+  - sword
+  - Player
+  - enemy
+  - Collision
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c7149fdadf79b40b65a590a1791abc, type: 3}
+  m_Name: Talis
+  m_EditorClassIdentifier: 
+  enemyType: 3
+  enemyName: Talis
+  enemySprite: {fileID: 21300000, guid: c3f45eb5f454f544680b34f25f5110ff, type: 3}
+  enemyMaxHp: 2
+  enemyOffensivePower: 10
+  enemyDefensePower: 5
+  enemyMoveSpeed: 3
+  enemyWaitTime: -1
+  enemyWalkTime: 3
+  enemyChaseSpeed: 5
+  enemyRangeToChase: 20
+  enemyWaitAfterHitting: -1
+  enemyKnockBackPower: 40
+  enemyAria: 40
+  enemyExp: 15
+  enemyBeamAtk: 0
+  enemyGodLodAtk: 0
+  enemyWaveAtk: 0
