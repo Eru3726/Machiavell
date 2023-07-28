@@ -5509,7 +5509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bossroom: 0
-  waitTime: 4
+  waitTime: 7
+  pause: {fileID: 1756626252}
 --- !u!4 &622163603
 Transform:
   m_ObjectHideFlags: 0
@@ -13577,6 +13578,7 @@ MonoBehaviour:
   pausecanvas: {fileID: 666900687}
   playercanvas: {fileID: 2107191750}
   tutrialcanvas: {fileID: 1977833881}
+  PauseFlag: 1
 --- !u!224 &1756626253
 RectTransform:
   m_ObjectHideFlags: 0

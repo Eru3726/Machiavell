@@ -9,12 +9,14 @@ public class BossPlayer : MonoBehaviour
     float time = 0;
     [SerializeField,Header("“®‚¯‚È‚¢ŽžŠÔ")]
     private int waitTime = 4;
+    public Pause pause;
     void Start()
     {
         Debug.Log(SceneManager.GetActiveScene().name);
         if (SceneManager.GetActiveScene().name=="KutyuBoss")
         {
             Bossroom = false;
+            pause.PauseFlag = false;
         }
         else
         {
@@ -36,6 +38,7 @@ public class BossPlayer : MonoBehaviour
             if (time >= waitTime)
             {
                 Bossroom = true;
+                pause.PauseFlag = true;
             }
         }
         
