@@ -7,7 +7,6 @@ public class Pause : MonoBehaviour
     public Slotcontroll sc;
     public GameObject HPbar;
     public GameObject hotbar;
-    public GameObject bookui;
     public GameObject configcanvas;
     public GameObject pausecanvas;
     public GameObject playercanvas;
@@ -40,7 +39,6 @@ public class Pause : MonoBehaviour
                 playercanvas.SetActive(false);
                 pausecanvas.SetActive(false);
                 hotbar.SetActive(false);
-                bookui.SetActive(false);
                 configcanvas.SetActive(false);
                 sc.hotbarUI.SetActive(false);
                 if (sc.buki1)

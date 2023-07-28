@@ -8,7 +8,6 @@ public class titleinstance : MonoBehaviour
     public GameObject config;
     //public GameObject volume;
     public GameObject titlecanvas;
-    public GameObject bookui;
     public GameObject tutrialcanvas;
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,6 @@ public class titleinstance : MonoBehaviour
     public void configinstance()
     {
         pause.SetActive(false);
-        bookui.SetActive(true);
         config.SetActive(true);
         //volume.SetActive(false);
         tutrialcanvas.SetActive(false);
@@ -31,7 +29,6 @@ public class titleinstance : MonoBehaviour
     public void volumeinstance()
     {
         pause.SetActive(false);
-        bookui.SetActive(false);
         //volume.SetActive(true);
         tutrialcanvas.SetActive(false);
     }
@@ -39,14 +36,12 @@ public class titleinstance : MonoBehaviour
     {
         pause.SetActive(true);
         config.SetActive(false);
-        bookui.SetActive(false);
         //volume.SetActive(false);
         tutrialcanvas.SetActive(false);
     }
     public void escapetitle()
     {
         titlecanvas.SetActive(true);
-        bookui.SetActive(false);
         pause.SetActive(false);
         config.SetActive(false);
         //volume.SetActive(false);

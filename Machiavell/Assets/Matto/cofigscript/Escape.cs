@@ -5,7 +5,6 @@ using UnityEngine;
 public class Escape : MonoBehaviour
 {
     public Slotcontroll sc;
-    public GameObject bookui;
     public GameObject configcanvas;
     public GameObject pausecanvas;
     public GameObject hotbar;
@@ -25,7 +24,6 @@ public class Escape : MonoBehaviour
         playercanvas.SetActive(false);
         hotbar.SetActive(false);
         sc.hotbarUI.SetActive(false);
-        bookui.SetActive(false);
         configcanvas.SetActive(false);
         pausecanvas.SetActive(true);
         if (sc.buki1)
