@@ -446,52 +446,52 @@ public class FusionSetting : MonoBehaviour
             if (pos == 1)
             {
                 fusionmoto = dw.pos1 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon1 = dw.weaponID;
+                GameData.inventoryWeapon[0] = dw.weaponID;
             }
             else if (pos == 2)
             {
                 fusionmoto = dw.pos2 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon2 = dw.weaponID;
+                GameData.inventoryWeapon[1] = dw.weaponID;
             }
             else if (pos == 3)
             {
                 fusionmoto = dw.pos3 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon3 = dw.weaponID;
+                GameData.inventoryWeapon[2] = dw.weaponID;
             }
             else if (pos == 4)
             {
                 fusionmoto = dw.pos4 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon4 = dw.weaponID;
+                GameData.inventoryWeapon[3] = dw.weaponID;
             }
             else if (pos == 5)
             {
                 fusionmoto = dw.pos5 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon5 = dw.weaponID;
+                GameData.inventoryWeapon[4] = dw.weaponID;
             }
             else if (pos == 6)
             {
                 fusionmoto = dw.pos6 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon6 = dw.weaponID;
+                GameData.inventoryWeapon[5] = dw.weaponID;
             }
             else if (pos == 7)
             {
                 fusionmoto = dw.pos7 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon7 = dw.weaponID;
+                GameData.inventoryWeapon[6] = dw.weaponID;
             }
             else if (pos == 8)
             {
                 fusionmoto = dw.pos8 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon8 = dw.weaponID;
+                GameData.inventoryWeapon[7] = dw.weaponID;
             }
             else if (pos == 9)
             {
                 fusionmoto = dw.pos9 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon9 = dw.weaponID;
+                GameData.inventoryWeapon[8] = dw.weaponID;
             }
             else if (pos == 10)
             {
                 fusionmoto = dw.pos10 = Instantiate(fusionmoto, fusionposi, Quaternion.identity);
-                GameData.inventoryWeapon10 = dw.weaponID;
+                GameData.inventoryWeapon[9] = dw.weaponID;
             }
             sozai = false;
             fusionobj = true;

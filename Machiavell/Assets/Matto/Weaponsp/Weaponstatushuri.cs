@@ -23,141 +23,141 @@ public class Weaponstatushuri : MonoBehaviour
         }
         else if (ks.sannsyou == dw.pos1)
         {
-            if (GameData.playerhp > GameData.weaponneedHp1)
+            if (GameData.playerhp > GameData.weaponneedHp[0])
             {
-                GameData.weaponHp1 += 10;
-                GameData.playerhp -= GameData.weaponneedHp1;
-                GameData.weaponhpcount1 += 1;
-                if (GameData.weaponhpcount1 >= 5)
+                GameData.weaponHp[0] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[0];
+                GameData.weaponhpcount[0] += 1;
+                if (GameData.weaponhpcount[0] >= 5)
                 {
-                    GameData.weaponneedHp1 += 10;
-                    GameData.weaponhpcount1 = 0;
+                    GameData.weaponneedHp[0] += 10;
+                    GameData.weaponhpcount[0] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos2)
         {
-            if (GameData.playerhp > GameData.weaponneedHp2)
+            if (GameData.playerhp > GameData.weaponneedHp[1])
             {
-                GameData.weaponHp2 += 10;
-                GameData.playerhp -= GameData.weaponneedHp2;
-                GameData.weaponhpcount2 += 1;
-                if (GameData.weaponhpcount2 >= 5)
+                GameData.weaponHp[1] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[1];
+                GameData.weaponhpcount[1] += 1;
+                if (GameData.weaponhpcount[1] >= 5)
                 {
-                    GameData.weaponneedHp2 += 10;
-                    GameData.weaponhpcount2 = 0;
+                    GameData.weaponneedHp[1] += 10;
+                    GameData.weaponhpcount[1] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos3)
         {
-            if (GameData.playerhp > GameData.weaponneedHp3)
+            if (GameData.playerhp > GameData.weaponneedHp[2])
             {
-                GameData.weaponHp3 += 10;
-                GameData.playerhp -= GameData.weaponneedHp3;
-                GameData.weaponhpcount3 += 1;
-                if (GameData.weaponhpcount3 >= 5)
+                GameData.weaponHp[2] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[2];
+                GameData.weaponhpcount[2] += 1;
+                if (GameData.weaponhpcount[2] >= 5)
                 {
-                    GameData.weaponneedHp3 += 10;
-                    GameData.weaponhpcount3 = 0;
+                    GameData.weaponneedHp[2] += 10;
+                    GameData.weaponhpcount[2] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos4)
         {
-            if (GameData.playerhp > GameData.weaponneedHp4)
+            if (GameData.playerhp > GameData.weaponneedHp[3])
             {
-                GameData.weaponHp4 += 10;
-                GameData.playerhp -= GameData.weaponneedHp4;
-                GameData.weaponhpcount4 += 1;
-                if (GameData.weaponhpcount4 >= 5)
+                GameData.weaponHp[3] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[3];
+                GameData.weaponhpcount[3] += 1;
+                if (GameData.weaponhpcount[3] >= 5)
                 {
-                    GameData.weaponneedHp4 += 10;
-                    GameData.weaponhpcount4 = 0;
+                    GameData.weaponneedHp[3] += 10;
+                    GameData.weaponhpcount[3] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos5)
         {
-            if (GameData.playerhp > GameData.weaponneedHp5)
+            if (GameData.playerhp > GameData.weaponneedHp[4])
             {
-                GameData.weaponHp5 += 10;
-                GameData.playerhp -= GameData.weaponneedHp5;
-                GameData.weaponhpcount5 += 1;
-                if (GameData.weaponhpcount5 >= 5)
+                GameData.weaponHp[4] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[4];
+                GameData.weaponhpcount[4] += 1;
+                if (GameData.weaponhpcount[4] >= 5)
                 {
-                    GameData.weaponneedHp5 += 10;
-                    GameData.weaponhpcount5 = 0;
+                    GameData.weaponneedHp[4] += 10;
+                    GameData.weaponhpcount[4] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos6)
         {
-            if (GameData.playerhp > GameData.weaponneedHp6)
+            if (GameData.playerhp > GameData.weaponneedHp[5])
             {
-                GameData.weaponHp6 += 10;
-                GameData.playerhp -= GameData.weaponneedHp6;
-                GameData.weaponhpcount6 += 1;
-                if (GameData.weaponhpcount6 >= 5)
+                GameData.weaponHp[5] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[5];
+                GameData.weaponhpcount[5] += 1;
+                if (GameData.weaponhpcount[5] >= 5)
                 {
-                    GameData.weaponneedHp6 += 10;
-                    GameData.weaponhpcount6 = 0;
+                    GameData.weaponneedHp[5] += 10;
+                    GameData.weaponhpcount[5] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos7)
         {
-            if (GameData.playerhp > GameData.weaponneedHp7)
+            if (GameData.playerhp > GameData.weaponneedHp[6])
             {
-                GameData.weaponHp7 += 10;
-                GameData.playerhp -= GameData.weaponneedHp7;
-                GameData.weaponhpcount7 += 1;
-                if (GameData.weaponhpcount7 >= 5)
+                GameData.weaponHp[6] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[6];
+                GameData.weaponhpcount[6] += 1;
+                if (GameData.weaponhpcount[6] >= 5)
                 {
-                    GameData.weaponneedHp7 += 10;
-                    GameData.weaponhpcount7 = 0;
+                    GameData.weaponneedHp[6] += 10;
+                    GameData.weaponhpcount[6] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos8)
         {
-            if (GameData.playerhp > GameData.weaponneedHp8)
+            if (GameData.playerhp > GameData.weaponneedHp[7])
             {
-                GameData.weaponHp8 += 10;
-                GameData.playerhp -= GameData.weaponneedHp8;
-                GameData.weaponhpcount8 += 1;
-                if (GameData.weaponhpcount8 >= 5)
+                GameData.weaponHp[7] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[7];
+                GameData.weaponhpcount[7] += 1;
+                if (GameData.weaponhpcount[7] >= 5)
                 {
-                    GameData.weaponneedHp8 += 10;
-                    GameData.weaponhpcount8 = 0;
+                    GameData.weaponneedHp[7] += 10;
+                    GameData.weaponhpcount[7] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos9)
         {
-            if (GameData.playerhp > GameData.weaponneedHp9)
+            if (GameData.playerhp > GameData.weaponneedHp[8])
             {
-                GameData.weaponHp9 += 10;
-                GameData.playerhp -= GameData.weaponneedHp9;
-                GameData.weaponhpcount9 += 1;
-                if (GameData.weaponhpcount9 >= 5)
+                GameData.weaponHp[8] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[8];
+                GameData.weaponhpcount[8] += 1;
+                if (GameData.weaponhpcount[8] >= 5)
                 {
-                    GameData.weaponneedHp9 += 10;
-                    GameData.weaponhpcount9 = 0;
+                    GameData.weaponneedHp[8] += 10;
+                    GameData.weaponhpcount[8] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos10)
         {
-            if (GameData.playerhp > GameData.weaponneedHp10)
+            if (GameData.playerhp > GameData.weaponneedHp[9])
             {
-                GameData.weaponHp10 += 10;
-                GameData.playerhp -= GameData.weaponneedHp10;
-                GameData.weaponhpcount10 += 1;
-                if (GameData.weaponhpcount10 >= 5)
+                GameData.weaponHp[9] += 10;
+                GameData.playerhp -= GameData.weaponneedHp[9];
+                GameData.weaponhpcount[9] += 1;
+                if (GameData.weaponhpcount[9] >= 5)
                 {
-                    GameData.weaponneedHp10 += 10;
-                    GameData.weaponhpcount10 = 0;
+                    GameData.weaponneedHp[9] += 10;
+                    GameData.weaponhpcount[9] = 0;
                 }
             }
         }
@@ -170,141 +170,141 @@ public class Weaponstatushuri : MonoBehaviour
         }
         else if (ks.sannsyou == dw.pos1)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina1)
+            if (GameData.playerstamina > GameData.weaponneedStamina[0])
             {
-                GameData.weaponStamina1 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina1;
-                GameData.weaponStaminacount1 += 1;
-                if (GameData.weaponStaminacount1 >= 5)
+                GameData.weaponStamina[0] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[0];
+                GameData.weaponStaminacount[0] += 1;
+                if (GameData.weaponStaminacount[0] >= 5)
                 {
-                    GameData.weaponneedStamina1 += 10;
-                    GameData.weaponStaminacount1 = 0;
+                    GameData.weaponneedStamina[0] += 10;
+                    GameData.weaponStaminacount[0] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos2)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina2)
+            if (GameData.playerstamina > GameData.weaponneedStamina[1])
             {
-                GameData.weaponStamina2 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina2;
-                GameData.weaponStaminacount2 += 1;
-                if (GameData.weaponStaminacount2 >= 5)
+                GameData.weaponStamina[1] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[1];
+                GameData.weaponStaminacount[1] += 1;
+                if (GameData.weaponStaminacount[1] >= 5)
                 {
-                    GameData.weaponneedStamina2 += 10;
-                    GameData.weaponStaminacount2 = 0;
+                    GameData.weaponneedStamina[1] += 10;
+                    GameData.weaponStaminacount[1] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos3)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina3)
+            if (GameData.playerstamina > GameData.weaponneedStamina[2])
             {
-                GameData.weaponStamina3 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina3;
-                GameData.weaponStaminacount3 += 1;
-                if (GameData.weaponStaminacount3 >= 5)
+                GameData.weaponStamina[2] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[2];
+                GameData.weaponStaminacount[2] += 1;
+                if (GameData.weaponStaminacount[2] >= 5)
                 {
-                    GameData.weaponneedStamina3 += 10;
-                    GameData.weaponStaminacount3 = 0;
+                    GameData.weaponneedStamina[2] += 10;
+                    GameData.weaponStaminacount[2] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos4)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina4)
+            if (GameData.playerstamina > GameData.weaponneedStamina[3])
             {
-                GameData.weaponStamina4 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina4;
-                GameData.weaponStaminacount4 += 1;
-                if (GameData.weaponStaminacount4 >= 5)
+                GameData.weaponStamina[3] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[3];
+                GameData.weaponStaminacount[3] += 1;
+                if (GameData.weaponStaminacount[3] >= 5)
                 {
-                    GameData.weaponneedStamina4 += 10;
-                    GameData.weaponStaminacount4 = 0;
+                    GameData.weaponneedStamina[3] += 10;
+                    GameData.weaponStaminacount[3] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos5)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina5)
+            if (GameData.playerstamina > GameData.weaponneedStamina[4])
             {
-                GameData.weaponStamina5 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina5;
-                GameData.weaponStaminacount5 += 1;
-                if (GameData.weaponStaminacount5 >= 5)
+                GameData.weaponStamina[4] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[4];
+                GameData.weaponStaminacount[4] += 1;
+                if (GameData.weaponStaminacount[4] >= 5)
                 {
-                    GameData.weaponneedStamina5 += 10;
-                    GameData.weaponStaminacount5 = 0;
+                    GameData.weaponneedStamina[4] += 10;
+                    GameData.weaponStaminacount[4] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos6)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina6)
+            if (GameData.playerstamina > GameData.weaponneedStamina[5])
             {
-                GameData.weaponStamina6 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina6;
-                GameData.weaponStaminacount6 += 1;
-                if (GameData.weaponStaminacount6 >= 5)
+                GameData.weaponStamina[5] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[5];
+                GameData.weaponStaminacount[5] += 1;
+                if (GameData.weaponStaminacount[5] >= 5)
                 {
-                    GameData.weaponneedStamina6 += 10;
-                    GameData.weaponStaminacount6 = 0;
+                    GameData.weaponneedStamina[5] += 10;
+                    GameData.weaponStaminacount[5] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos7)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina7)
+            if (GameData.playerstamina > GameData.weaponneedStamina[6])
             {
-                GameData.weaponStamina7 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina7;
-                GameData.weaponStaminacount7 += 1;
-                if (GameData.weaponStaminacount7 >= 5)
+                GameData.weaponStamina[6] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[6];
+                GameData.weaponStaminacount[6] += 1;
+                if (GameData.weaponStaminacount[6] >= 5)
                 {
-                    GameData.weaponneedStamina7 += 10;
-                    GameData.weaponStaminacount7 = 0;
+                    GameData.weaponneedStamina[6] += 10;
+                    GameData.weaponStaminacount[6] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos8)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina8)
+            if (GameData.playerstamina > GameData.weaponneedStamina[7])
             {
-                GameData.weaponStamina8 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina8;
-                GameData.weaponStaminacount8 += 1;
-                if (GameData.weaponStaminacount8 >= 5)
+                GameData.weaponStamina[7] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[7];
+                GameData.weaponStaminacount[7] += 1;
+                if (GameData.weaponStaminacount[7] >= 5)
                 {
-                    GameData.weaponneedStamina8 += 10;
-                    GameData.weaponStaminacount8 = 0;
+                    GameData.weaponneedStamina[7] += 10;
+                    GameData.weaponStaminacount[7] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos9)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina9)
+            if (GameData.playerstamina > GameData.weaponneedStamina[8])
             {
-                GameData.weaponStamina9 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina9;
-                GameData.weaponStaminacount9 += 1;
-                if (GameData.weaponStaminacount9 >= 5)
+                GameData.weaponStamina[8] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[8];
+                GameData.weaponStaminacount[8] += 1;
+                if (GameData.weaponStaminacount[8] >= 5)
                 {
-                    GameData.weaponneedStamina9 += 10;
-                    GameData.weaponStaminacount9 = 0;
+                    GameData.weaponneedStamina[8] += 10;
+                    GameData.weaponStaminacount[8] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos10)
         {
-            if (GameData.playerstamina > GameData.weaponneedStamina10)
+            if (GameData.playerstamina > GameData.weaponneedStamina[9])
             {
-                GameData.weaponStamina10 += 10;
-                GameData.playerstamina -= GameData.weaponneedStamina10;
-                GameData.weaponStaminacount10 += 1;
-                if (GameData.weaponStaminacount10 >= 5)
+                GameData.weaponStamina[9] += 10;
+                GameData.playerstamina -= GameData.weaponneedStamina[9];
+                GameData.weaponStaminacount[9] += 1;
+                if (GameData.weaponStaminacount[9] >= 5)
                 {
-                    GameData.weaponneedStamina10 += 10;
-                    GameData.weaponStaminacount10 = 0;
+                    GameData.weaponneedStamina[9] += 10;
+                    GameData.weaponStaminacount[9] = 0;
                 }
             }
         }
@@ -317,141 +317,141 @@ public class Weaponstatushuri : MonoBehaviour
         }
         else if (ks.sannsyou == dw.pos1)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack1)
+            if (GameData.playeroffence > GameData.weaponneedAttack[0])
             {
-                GameData.weaponAttack1 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack1;
-                GameData.weaponAttackcount1 += 1;
-                if (GameData.weaponAttackcount1 >= 5)
+                GameData.weaponAttack[0] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[0];
+                GameData.weaponAttackcount[0] += 1;
+                if (GameData.weaponAttackcount[0] >= 5)
                 {
-                    GameData.weaponneedAttack1 += 1;
-                    GameData.weaponAttackcount1 = 0;
+                    GameData.weaponneedAttack[0] += 1;
+                    GameData.weaponAttackcount[0] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos2)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack2)
+            if (GameData.playeroffence > GameData.weaponneedAttack[1])
             {
-                GameData.weaponAttack2 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack2;
-                GameData.weaponAttackcount2 += 1;
-                if (GameData.weaponAttackcount2 >= 5)
+                GameData.weaponAttack[1] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[1];
+                GameData.weaponAttackcount[1] += 1;
+                if (GameData.weaponAttackcount[1] >= 5)
                 {
-                    GameData.weaponneedAttack2 += 1;
-                    GameData.weaponAttackcount2 = 0;
+                    GameData.weaponneedAttack[1] += 1;
+                    GameData.weaponAttackcount[1] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos3)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack3)
+            if (GameData.playeroffence > GameData.weaponneedAttack[2])
             {
-                GameData.weaponAttack3 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack3;
-                GameData.weaponAttackcount3 += 1;
-                if (GameData.weaponAttackcount3 >= 5)
+                GameData.weaponAttack[2] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[2];
+                GameData.weaponAttackcount[2] += 1;
+                if (GameData.weaponAttackcount[2] >= 5)
                 {
-                    GameData.weaponneedAttack3 += 1;
-                    GameData.weaponAttackcount3 = 0;
+                    GameData.weaponneedAttack[2] += 1;
+                    GameData.weaponAttackcount[2] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos4)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack4)
+            if (GameData.playeroffence > GameData.weaponneedAttack[3])
             {
-                GameData.weaponAttack4 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack4;
-                GameData.weaponAttackcount4 += 1;
-                if (GameData.weaponAttackcount4 >= 5)
+                GameData.weaponAttack[3] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[3];
+                GameData.weaponAttackcount[3] += 1;
+                if (GameData.weaponAttackcount[3] >= 5)
                 {
-                    GameData.weaponneedAttack4 += 1;
-                    GameData.weaponAttackcount4 = 0;
+                    GameData.weaponneedAttack[3] += 1;
+                    GameData.weaponAttackcount[3] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos5)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack5)
+            if (GameData.playeroffence > GameData.weaponneedAttack[4])
             {
-                GameData.weaponAttack5 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack5;
-                GameData.weaponAttackcount5 += 1;
-                if (GameData.weaponAttackcount5 >= 5)
+                GameData.weaponAttack[4] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[4];
+                GameData.weaponAttackcount[4] += 1;
+                if (GameData.weaponAttackcount[4] >= 5)
                 {
-                    GameData.weaponneedAttack5 += 1;
-                    GameData.weaponAttackcount5 = 0;
+                    GameData.weaponneedAttack[4] += 1;
+                    GameData.weaponAttackcount[4] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos6)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack6)
+            if (GameData.playeroffence > GameData.weaponneedAttack[5])
             {
-                GameData.weaponAttack6 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack6;
-                GameData.weaponAttackcount6 += 1;
-                if (GameData.weaponAttackcount6 >= 5)
+                GameData.weaponAttack[5] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[5];
+                GameData.weaponAttackcount[5] += 1;
+                if (GameData.weaponAttackcount[5] >= 5)
                 {
-                    GameData.weaponneedAttack6 += 1;
-                    GameData.weaponAttackcount6 = 0;
+                    GameData.weaponneedAttack[5] += 1;
+                    GameData.weaponAttackcount[5] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos7)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack7)
+            if (GameData.playeroffence > GameData.weaponneedAttack[6])
             {
-                GameData.weaponAttack7 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack7;
-                GameData.weaponAttackcount7 += 1;
-                if (GameData.weaponAttackcount7 >= 5)
+                GameData.weaponAttack[6] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[6];
+                GameData.weaponAttackcount[6] += 1;
+                if (GameData.weaponAttackcount[6] >= 5)
                 {
-                    GameData.weaponneedAttack7 += 1;
-                    GameData.weaponAttackcount7 = 0;
+                    GameData.weaponneedAttack[6] += 1;
+                    GameData.weaponAttackcount[6] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos8)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack8)
+            if (GameData.playeroffence > GameData.weaponneedAttack[7])
             {
-                GameData.weaponAttack8 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack8;
-                GameData.weaponAttackcount8 += 1;
-                if (GameData.weaponAttackcount8 >= 5)
+                GameData.weaponAttack[7] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[7];
+                GameData.weaponAttackcount[7] += 1;
+                if (GameData.weaponAttackcount[7] >= 5)
                 {
-                    GameData.weaponneedAttack8 += 1;
-                    GameData.weaponAttackcount8 = 0;
+                    GameData.weaponneedAttack[7] += 1;
+                    GameData.weaponAttackcount[7] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos9)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack9)
+            if (GameData.playeroffence > GameData.weaponneedAttack[8])
             {
-                GameData.weaponAttack9 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack9;
-                GameData.weaponAttackcount9 += 1;
-                if (GameData.weaponAttackcount9 >= 5)
+                GameData.weaponAttack[8] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[8];
+                GameData.weaponAttackcount[8] += 1;
+                if (GameData.weaponAttackcount[8] >= 5)
                 {
-                    GameData.weaponneedAttack9 += 1;
-                    GameData.weaponAttackcount9 = 0;
+                    GameData.weaponneedAttack[8] += 1;
+                    GameData.weaponAttackcount[8] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos10)
         {
-            if (GameData.playeroffence > GameData.weaponneedAttack10)
+            if (GameData.playeroffence > GameData.weaponneedAttack[9])
             {
-                GameData.weaponAttack10 += 1;
-                GameData.playeroffence -= GameData.weaponneedAttack10;
-                GameData.weaponAttackcount10 += 1;
-                if (GameData.weaponAttackcount10 >= 5)
+                GameData.weaponAttack[9] += 1;
+                GameData.playeroffence -= GameData.weaponneedAttack[9];
+                GameData.weaponAttackcount[9] += 1;
+                if (GameData.weaponAttackcount[9] >= 5)
                 {
-                    GameData.weaponneedAttack10 += 1;
-                    GameData.weaponAttackcount10 = 0;
+                    GameData.weaponneedAttack[9] += 1;
+                    GameData.weaponAttackcount[9] = 0;
                 }
             }
         }
@@ -464,141 +464,141 @@ public class Weaponstatushuri : MonoBehaviour
         }
         else if (ks.sannsyou == dw.pos1)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard1)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[0])
             {
-                GameData.weaponGuard1 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard1;
-                GameData.weaponGuardcount1 += 1;
-                if (GameData.weaponGuardcount1 >= 5)
+                GameData.weaponGuard[0] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[0];
+                GameData.weaponGuardcount[0] += 1;
+                if (GameData.weaponGuardcount[0] >= 5)
                 {
-                    GameData.weaponneedGuard1 += 1;
-                    GameData.weaponGuardcount1 = 0;
+                    GameData.weaponneedGuard[0] += 1;
+                    GameData.weaponGuardcount[0] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos2)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard2)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[1])
             {
-                GameData.weaponGuard2 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard2;
-                GameData.weaponGuardcount2 += 1;
-                if (GameData.weaponGuardcount2 >= 5)
+                GameData.weaponGuard[1] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[1];
+                GameData.weaponGuardcount[1] += 1;
+                if (GameData.weaponGuardcount[1] >= 5)
                 {
-                    GameData.weaponneedGuard1 += 1;
-                    GameData.weaponGuardcount1 = 0;
+                    GameData.weaponneedGuard[1] += 1;
+                    GameData.weaponGuardcount[1] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos3)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard3)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[2])
             {
-                GameData.weaponGuard3 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard3;
-                GameData.weaponGuardcount3 += 1;
-                if (GameData.weaponGuardcount3 >= 5)
+                GameData.weaponGuard[2] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[2];
+                GameData.weaponGuardcount[2] += 1;
+                if (GameData.weaponGuardcount[2] >= 5)
                 {
-                    GameData.weaponneedGuard3 += 1;
-                    GameData.weaponGuardcount3 = 0;
+                    GameData.weaponneedGuard[2] += 1;
+                    GameData.weaponGuardcount[2] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos4)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard4)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[3])
             {
-                GameData.weaponGuard4 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard4;
-                GameData.weaponGuardcount4 += 1;
-                if (GameData.weaponGuardcount4 >= 5)
+                GameData.weaponGuard[3] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[3];
+                GameData.weaponGuardcount[3] += 1;
+                if (GameData.weaponGuardcount[3] >= 5)
                 {
-                    GameData.weaponneedGuard4 += 1;
-                    GameData.weaponGuardcount4 = 0;
+                    GameData.weaponneedGuard[3] += 1;
+                    GameData.weaponGuardcount[3] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos5)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard5)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[4])
             {
-                GameData.weaponGuard5 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard5;
-                GameData.weaponGuardcount5 += 1;
-                if (GameData.weaponGuardcount5 >= 5)
+                GameData.weaponGuard[4] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[4];
+                GameData.weaponGuardcount[4] += 1;
+                if (GameData.weaponGuardcount[4] >= 5)
                 {
-                    GameData.weaponneedGuard5 += 1;
-                    GameData.weaponGuardcount5 = 0;
+                    GameData.weaponneedGuard[4] += 1;
+                    GameData.weaponGuardcount[4] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos6)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard6)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[5])
             {
-                GameData.weaponGuard6 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard6;
-                GameData.weaponGuardcount6 += 1;
-                if (GameData.weaponGuardcount6 >= 5)
+                GameData.weaponGuard[5] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[5];
+                GameData.weaponGuardcount[5] += 1;
+                if (GameData.weaponGuardcount[5] >= 5)
                 {
-                    GameData.weaponneedGuard6 += 1;
-                    GameData.weaponGuardcount6 = 0;
+                    GameData.weaponneedGuard[5] += 1;
+                    GameData.weaponGuardcount[5] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos7)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard7)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[6])
             {
-                GameData.weaponGuard7 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard7;
-                GameData.weaponGuardcount7 += 1;
-                if (GameData.weaponGuardcount7 >= 5)
+                GameData.weaponGuard[6] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[6];
+                GameData.weaponGuardcount[6] += 1;
+                if (GameData.weaponGuardcount[6] >= 5)
                 {
-                    GameData.weaponneedGuard7 += 1;
-                    GameData.weaponGuardcount7 = 0;
+                    GameData.weaponneedGuard[6] += 1;
+                    GameData.weaponGuardcount[6] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos8)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard8)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[7])
             {
-                GameData.weaponGuard8 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard8;
-                GameData.weaponGuardcount8 += 1;
-                if (GameData.weaponGuardcount8 >= 5)
+                GameData.weaponGuard[7] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[7];
+                GameData.weaponGuardcount[7] += 1;
+                if (GameData.weaponGuardcount[7] >= 5)
                 {
-                    GameData.weaponneedGuard8 += 1;
-                    GameData.weaponGuardcount8 = 0;
+                    GameData.weaponneedGuard[7] += 1;
+                    GameData.weaponGuardcount[7] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos9)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard9)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[8])
             {
-                GameData.weaponGuard9 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard9;
-                GameData.weaponGuardcount9 += 1;
-                if (GameData.weaponGuardcount9 >= 5)
+                GameData.weaponGuard[8] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[8];
+                GameData.weaponGuardcount[8] += 1;
+                if (GameData.weaponGuardcount[8] >= 5)
                 {
-                    GameData.weaponneedGuard9 += 1;
-                    GameData.weaponGuardcount9 = 0;
+                    GameData.weaponneedGuard[8] += 1;
+                    GameData.weaponGuardcount[8] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos10)
         {
-            if (GameData.playerdeffence > GameData.weaponneedGuard10)
+            if (GameData.playerdeffence > GameData.weaponneedGuard[9])
             {
-                GameData.weaponGuard10 += 1;
-                GameData.playerdeffence -= GameData.weaponneedGuard10;
-                GameData.weaponGuardcount10 += 1;
-                if (GameData.weaponGuardcount10 >= 5)
+                GameData.weaponGuard[9] += 1;
+                GameData.playerdeffence -= GameData.weaponneedGuard[9];
+                GameData.weaponGuardcount[9] += 1;
+                if (GameData.weaponGuardcount[9] >= 5)
                 {
-                    GameData.weaponneedGuard10 += 1;
-                    GameData.weaponGuardcount10 = 0;
+                    GameData.weaponneedGuard[9] += 1;
+                    GameData.weaponGuardcount[9] = 0;
                 }
             }
         }
@@ -611,301 +611,301 @@ public class Weaponstatushuri : MonoBehaviour
         }
         else if (ks.sannsyou == dw.pos1)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck1)
+            if (GameData.playerluck > GameData.weaponneedLuck[0])
             {
-                GameData.weaponLuck1 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck1;
-                GameData.weaponLuckcount1 += 1;
-                if (GameData.weaponLuckcount1 >= 5)
+                GameData.weaponLuck[0] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[0];
+                GameData.weaponLuckcount[0] += 1;
+                if (GameData.weaponLuckcount[0] >= 5)
                 {
-                    GameData.weaponneedLuck1 += 1;
-                    GameData.weaponLuckcount1 = 0;
+                    GameData.weaponneedLuck[0] += 1;
+                    GameData.weaponLuckcount[0] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos2)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck2)
+            if (GameData.playerluck > GameData.weaponneedLuck[1])
             {
-                GameData.weaponLuck2 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck2;
-                GameData.weaponLuckcount2 += 1;
-                if (GameData.weaponLuckcount2 >= 5)
+                GameData.weaponLuck[1] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[1];
+                GameData.weaponLuckcount[1] += 1;
+                if (GameData.weaponLuckcount[1] >= 5)
                 {
-                    GameData.weaponneedLuck2 += 1;
-                    GameData.weaponLuckcount2 = 0;
+                    GameData.weaponneedLuck[1] += 1;
+                    GameData.weaponLuckcount[1] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos3)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck3)
+            if (GameData.playerluck > GameData.weaponneedLuck[2])
             {
-                GameData.weaponLuck3 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck3;
-                GameData.weaponLuckcount3 += 1;
-                if (GameData.weaponLuckcount3 >= 5)
+                GameData.weaponLuck[2] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[2];
+                GameData.weaponLuckcount[2] += 1;
+                if (GameData.weaponLuckcount[2] >= 5)
                 {
-                    GameData.weaponneedLuck3 += 1;
-                    GameData.weaponLuckcount3 = 0;
+                    GameData.weaponneedLuck[2] += 1;
+                    GameData.weaponLuckcount[2] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos4)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck4)
+            if (GameData.playerluck > GameData.weaponneedLuck[3])
             {
-                GameData.weaponLuck4 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck4;
-                GameData.weaponLuckcount4 += 1;
-                if (GameData.weaponLuckcount4 >= 5)
+                GameData.weaponLuck[3] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[3];
+                GameData.weaponLuckcount[3] += 1;
+                if (GameData.weaponLuckcount[3] >= 5)
                 {
-                    GameData.weaponneedLuck4 += 1;
-                    GameData.weaponLuckcount4 = 0;
+                    GameData.weaponneedLuck[3] += 1;
+                    GameData.weaponLuckcount[3] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos5)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck5)
+            if (GameData.playerluck > GameData.weaponneedLuck[4])
             {
-                GameData.weaponLuck5 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck5;
-                GameData.weaponLuckcount5 += 1;
-                if (GameData.weaponLuckcount5 >= 5)
+                GameData.weaponLuck[4] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[4];
+                GameData.weaponLuckcount[4] += 1;
+                if (GameData.weaponLuckcount[4] >= 5)
                 {
-                    GameData.weaponneedLuck5 += 1;
-                    GameData.weaponLuckcount5 = 0;
+                    GameData.weaponneedLuck[4] += 1;
+                    GameData.weaponLuckcount[4] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos6)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck6)
+            if (GameData.playerluck > GameData.weaponneedLuck[5])
             {
-                GameData.weaponLuck6 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck6;
-                GameData.weaponLuckcount6 += 1;
-                if (GameData.weaponLuckcount6 >= 5)
+                GameData.weaponLuck[5] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[5];
+                GameData.weaponLuckcount[5] += 1;
+                if (GameData.weaponLuckcount[5] >= 5)
                 {
-                    GameData.weaponneedLuck6 += 1;
-                    GameData.weaponLuckcount6 = 0;
+                    GameData.weaponneedLuck[5] += 1;
+                    GameData.weaponLuckcount[5] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos7)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck7)
+            if (GameData.playerluck > GameData.weaponneedLuck[6])
             {
-                GameData.weaponLuck7 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck7;
-                GameData.weaponLuckcount7 += 1;
-                if (GameData.weaponLuckcount7 >= 5)
+                GameData.weaponLuck[6] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[6];
+                GameData.weaponLuckcount[6] += 1;
+                if (GameData.weaponLuckcount[6] >= 5)
                 {
-                    GameData.weaponneedLuck7 += 1;
-                    GameData.weaponLuckcount7 = 0;
+                    GameData.weaponneedLuck[6] += 1;
+                    GameData.weaponLuckcount[6] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos8)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck8)
+            if (GameData.playerluck > GameData.weaponneedLuck[7])
             {
-                GameData.weaponLuck8 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck8;
-                GameData.weaponLuckcount8 += 1;
-                if (GameData.weaponLuckcount8 >= 5)
+                GameData.weaponLuck[7] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[7];
+                GameData.weaponLuckcount[7] += 1;
+                if (GameData.weaponLuckcount[7] >= 5)
                 {
-                    GameData.weaponneedLuck8 += 1;
-                    GameData.weaponLuckcount8 = 0;
+                    GameData.weaponneedLuck[7] += 1;
+                    GameData.weaponLuckcount[7] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos9)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck9)
+            if (GameData.playerluck > GameData.weaponneedLuck[8])
             {
-                GameData.weaponLuck9 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck9;
-                GameData.weaponLuckcount9 += 1;
-                if (GameData.weaponLuckcount9 >= 5)
+                GameData.weaponLuck[8] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[8];
+                GameData.weaponLuckcount[8] += 1;
+                if (GameData.weaponLuckcount[8] >= 5)
                 {
-                    GameData.weaponneedLuck9 += 1;
-                    GameData.weaponLuckcount9 = 0;
+                    GameData.weaponneedLuck[8] += 1;
+                    GameData.weaponLuckcount[8] = 0;
                 }
             }
         }
         else if (ks.sannsyou == dw.pos10)
         {
-            if (GameData.playerluck > GameData.weaponneedLuck10)
+            if (GameData.playerluck > GameData.weaponneedLuck[9])
             {
-                GameData.weaponLuck10 += 1;
-                GameData.playerluck -= GameData.weaponneedLuck10;
-                GameData.weaponLuckcount10 += 1;
-                if (GameData.weaponLuckcount10 >= 5)
+                GameData.weaponLuck[9] += 1;
+                GameData.playerluck -= GameData.weaponneedLuck[9];
+                GameData.weaponLuckcount[9] += 1;
+                if (GameData.weaponLuckcount[9] >= 5)
                 {
-                    GameData.weaponneedLuck10 += 1;
-                    GameData.weaponLuckcount10 = 0;
+                    GameData.weaponneedLuck[9] += 1;
+                    GameData.weaponLuckcount[9] = 0;
                 }
             }
         }
     }
     public void statusreset()
     {
-        GameData.weaponHp1 = 10;
-        GameData.weaponHp2 = 10;
-        GameData.weaponHp3 = 10;
-        GameData.weaponHp4 = 10;
-        GameData.weaponHp5 = 10;
-        GameData.weaponHp6 = 10;
-        GameData.weaponHp7 = 10;
-        GameData.weaponHp8 = 10;
-        GameData.weaponHp9 = 10;
-        GameData.weaponHp10 = 10;
-        GameData.weaponneedHp1 = 10;
-        GameData.weaponneedHp2 = 10;
-        GameData.weaponneedHp3 = 10;
-        GameData.weaponneedHp4 = 10;
-        GameData.weaponneedHp5 = 10;
-        GameData.weaponneedHp6 = 10;
-        GameData.weaponneedHp7 = 10;
-        GameData.weaponneedHp8 = 10;
-        GameData.weaponneedHp9 = 10;
-        GameData.weaponneedHp10 = 10;
-        GameData.weaponhpcount1 = 0;
-        GameData.weaponhpcount2 = 0;
-        GameData.weaponhpcount3 = 0;
-        GameData.weaponhpcount4 = 0;
-        GameData.weaponhpcount5 = 0;
-        GameData.weaponhpcount6 = 0;
-        GameData.weaponhpcount7 = 0;
-        GameData.weaponhpcount8 = 0;
-        GameData.weaponhpcount9 = 0;
-        GameData.weaponhpcount10 = 0;
+        GameData.weaponHp[0] = 10;
+        GameData.weaponHp[1] = 10;
+        GameData.weaponHp[2] = 10;
+        GameData.weaponHp[3] = 10;
+        GameData.weaponHp[4] = 10;
+        GameData.weaponHp[5] = 10;
+        GameData.weaponHp[6] = 10;
+        GameData.weaponHp[7] = 10;
+        GameData.weaponHp[8] = 10;
+        GameData.weaponHp[9] = 10;
+        GameData.weaponneedHp[0] = 10;
+        GameData.weaponneedHp[1] = 10;
+        GameData.weaponneedHp[2] = 10;
+        GameData.weaponneedHp[3] = 10;
+        GameData.weaponneedHp[4] = 10;
+        GameData.weaponneedHp[5] = 10;
+        GameData.weaponneedHp[6] = 10;
+        GameData.weaponneedHp[7] = 10;
+        GameData.weaponneedHp[8] = 10;
+        GameData.weaponneedHp[9] = 10;
+        GameData.weaponhpcount[0] = 0;
+        GameData.weaponhpcount[1] = 0;
+        GameData.weaponhpcount[2] = 0;
+        GameData.weaponhpcount[3] = 0;
+        GameData.weaponhpcount[4] = 0;
+        GameData.weaponhpcount[5] = 0;
+        GameData.weaponhpcount[6] = 0;
+        GameData.weaponhpcount[7] = 0;
+        GameData.weaponhpcount[8] = 0;
+        GameData.weaponhpcount[9] = 0;
 
-        GameData.weaponStamina1 = 10;
-        GameData.weaponStamina2 = 10;
-        GameData.weaponStamina3 = 10;
-        GameData.weaponStamina4 = 10;
-        GameData.weaponStamina5 = 10;
-        GameData.weaponStamina6 = 10;
-        GameData.weaponStamina7 = 10;
-        GameData.weaponStamina8 = 10;
-        GameData.weaponStamina9 = 10;
-        GameData.weaponStamina10 = 10;
-        GameData.weaponneedStamina1 = 10;
-        GameData.weaponneedStamina2 = 10;
-        GameData.weaponneedStamina3 = 10;
-        GameData.weaponneedStamina4 = 10;
-        GameData.weaponneedStamina5 = 10;
-        GameData.weaponneedStamina6 = 10;
-        GameData.weaponneedStamina7 = 10;
-        GameData.weaponneedStamina8 = 10;
-        GameData.weaponneedStamina9 = 10;
-        GameData.weaponneedStamina10 = 10;
-        GameData.weaponStaminacount1 = 0;
-        GameData.weaponStaminacount2 = 0;
-        GameData.weaponStaminacount3 = 0;
-        GameData.weaponStaminacount4 = 0;
-        GameData.weaponStaminacount5 = 0;
-        GameData.weaponStaminacount6 = 0;
-        GameData.weaponStaminacount7 = 0;
-        GameData.weaponStaminacount8 = 0;
-        GameData.weaponStaminacount9 = 0;
-        GameData.weaponStaminacount10 = 0;
+        GameData.weaponStamina[0] = 10;
+        GameData.weaponStamina[1] = 10;
+        GameData.weaponStamina[2] = 10;
+        GameData.weaponStamina[3] = 10;
+        GameData.weaponStamina[4] = 10;
+        GameData.weaponStamina[5] = 10;
+        GameData.weaponStamina[6] = 10;
+        GameData.weaponStamina[7] = 10;
+        GameData.weaponStamina[8] = 10;
+        GameData.weaponStamina[9] = 10;
+        GameData.weaponneedStamina[0] = 10;
+        GameData.weaponneedStamina[1] = 10;
+        GameData.weaponneedStamina[2] = 10;
+        GameData.weaponneedStamina[3] = 10;
+        GameData.weaponneedStamina[4] = 10;
+        GameData.weaponneedStamina[5] = 10;
+        GameData.weaponneedStamina[6] = 10;
+        GameData.weaponneedStamina[7] = 10;
+        GameData.weaponneedStamina[8] = 10;
+        GameData.weaponneedStamina[9] = 10;
+        GameData.weaponStaminacount[0] = 0;
+        GameData.weaponStaminacount[1] = 0;
+        GameData.weaponStaminacount[2] = 0;
+        GameData.weaponStaminacount[3] = 0;
+        GameData.weaponStaminacount[4] = 0;
+        GameData.weaponStaminacount[5] = 0;
+        GameData.weaponStaminacount[6] = 0;
+        GameData.weaponStaminacount[7] = 0;
+        GameData.weaponStaminacount[8] = 0;
+        GameData.weaponStaminacount[9] = 0;
 
-        GameData.weaponAttack1 = 1;
-        GameData.weaponAttack2 = 1;
-        GameData.weaponAttack3 = 1;
-        GameData.weaponAttack4 = 1;
-        GameData.weaponAttack5 = 1;
-        GameData.weaponAttack6 = 1;
-        GameData.weaponAttack7 = 1;
-        GameData.weaponAttack8 = 1;
-        GameData.weaponAttack9 = 1;
-        GameData.weaponAttack10 = 1;
-        GameData.weaponneedAttack1 = 1;
-        GameData.weaponneedAttack2 = 1;
-        GameData.weaponneedAttack3 = 1;
-        GameData.weaponneedAttack4 = 1;
-        GameData.weaponneedAttack5 = 1;
-        GameData.weaponneedAttack6 = 1;
-        GameData.weaponneedAttack7 = 1;
-        GameData.weaponneedAttack8 = 1;
-        GameData.weaponneedAttack9 = 1;
-        GameData.weaponneedAttack10 = 1;
-        GameData.weaponAttackcount1 = 1;
-        GameData.weaponAttackcount2 = 1;
-        GameData.weaponAttackcount3 = 1;
-        GameData.weaponAttackcount4 = 1;
-        GameData.weaponAttackcount5 = 1;
-        GameData.weaponAttackcount6 = 1;
-        GameData.weaponAttackcount7 = 1;
-        GameData.weaponAttackcount8 = 1;
-        GameData.weaponAttackcount9 = 1;
-        GameData.weaponAttackcount10 = 1;
+        GameData.weaponAttack[0] = 1;
+        GameData.weaponAttack[1] = 1;
+        GameData.weaponAttack[2] = 1;
+        GameData.weaponAttack[3] = 1;
+        GameData.weaponAttack[4] = 1;
+        GameData.weaponAttack[5] = 1;
+        GameData.weaponAttack[6] = 1;
+        GameData.weaponAttack[7] = 1;
+        GameData.weaponAttack[8] = 1;
+        GameData.weaponAttack[9] = 1;
+        GameData.weaponneedAttack[0] = 1;
+        GameData.weaponneedAttack[1] = 1;
+        GameData.weaponneedAttack[2] = 1;
+        GameData.weaponneedAttack[3] = 1;
+        GameData.weaponneedAttack[4] = 1;
+        GameData.weaponneedAttack[5] = 1;
+        GameData.weaponneedAttack[6] = 1;
+        GameData.weaponneedAttack[7] = 1;
+        GameData.weaponneedAttack[8] = 1;
+        GameData.weaponneedAttack[9] = 1;
+        GameData.weaponAttackcount[0] = 1;
+        GameData.weaponAttackcount[1] = 1;
+        GameData.weaponAttackcount[2] = 1;
+        GameData.weaponAttackcount[3] = 1;
+        GameData.weaponAttackcount[4] = 1;
+        GameData.weaponAttackcount[5] = 1;
+        GameData.weaponAttackcount[6] = 1;
+        GameData.weaponAttackcount[7] = 1;
+        GameData.weaponAttackcount[8] = 1;
+        GameData.weaponAttackcount[9] = 1;
 
-        GameData.weaponGuard1 = 1;
-        GameData.weaponGuard2 = 1;
-        GameData.weaponGuard3 = 1;
-        GameData.weaponGuard4 = 1;
-        GameData.weaponGuard5 = 1;
-        GameData.weaponGuard6 = 1;
-        GameData.weaponGuard7 = 1;
-        GameData.weaponGuard8 = 1;
-        GameData.weaponGuard9 = 1;
-        GameData.weaponGuard10 = 1;
-        GameData.weaponneedGuard1 = 1;
-        GameData.weaponneedGuard2 = 1;
-        GameData.weaponneedGuard3 = 1;
-        GameData.weaponneedGuard4 = 1;
-        GameData.weaponneedGuard5 = 1;
-        GameData.weaponneedGuard6 = 1;
-        GameData.weaponneedGuard7 = 1;
-        GameData.weaponneedGuard8 = 1;
-        GameData.weaponneedGuard9 = 1;
-        GameData.weaponneedGuard10 = 1;
-        GameData.weaponGuardcount1 = 0;
-        GameData.weaponGuardcount2 = 0;
-        GameData.weaponGuardcount3 = 0;
-        GameData.weaponGuardcount4 = 0;
-        GameData.weaponGuardcount5 = 0;
-        GameData.weaponGuardcount6 = 0;
-        GameData.weaponGuardcount7 = 0;
-        GameData.weaponGuardcount8 = 0;
-        GameData.weaponGuardcount9 = 0;
-        GameData.weaponGuardcount10 = 0;
+        GameData.weaponGuard[0] = 1;
+        GameData.weaponGuard[1] = 1;
+        GameData.weaponGuard[2] = 1;
+        GameData.weaponGuard[3] = 1;
+        GameData.weaponGuard[4] = 1;
+        GameData.weaponGuard[5] = 1;
+        GameData.weaponGuard[6] = 1;
+        GameData.weaponGuard[7] = 1;
+        GameData.weaponGuard[8] = 1;
+        GameData.weaponGuard[9] = 1;
+        GameData.weaponneedGuard[0] = 1;
+        GameData.weaponneedGuard[1] = 1;
+        GameData.weaponneedGuard[2] = 1;
+        GameData.weaponneedGuard[3] = 1;
+        GameData.weaponneedGuard[4] = 1;
+        GameData.weaponneedGuard[5] = 1;
+        GameData.weaponneedGuard[6] = 1;
+        GameData.weaponneedGuard[7] = 1;
+        GameData.weaponneedGuard[8] = 1;
+        GameData.weaponneedGuard[9] = 1;
+        GameData.weaponGuardcount[0] = 0;
+        GameData.weaponGuardcount[1] = 0;
+        GameData.weaponGuardcount[2] = 0;
+        GameData.weaponGuardcount[3] = 0;
+        GameData.weaponGuardcount[4] = 0;
+        GameData.weaponGuardcount[5] = 0;
+        GameData.weaponGuardcount[6] = 0;
+        GameData.weaponGuardcount[7] = 0;
+        GameData.weaponGuardcount[8] = 0;
+        GameData.weaponGuardcount[9] = 0;
 
-        GameData.weaponLuck1 = 1;
-        GameData.weaponLuck2 = 1;
-        GameData.weaponLuck3 = 1;
-        GameData.weaponLuck4 = 1;
-        GameData.weaponLuck5 = 1;
-        GameData.weaponLuck6 = 1;
-        GameData.weaponLuck7 = 1;
-        GameData.weaponLuck8 = 1;
-        GameData.weaponLuck9 = 1;
-        GameData.weaponLuck10 = 1;
-        GameData.weaponneedLuck1 = 1;
-        GameData.weaponneedLuck2 = 1;
-        GameData.weaponneedLuck3 = 1;
-        GameData.weaponneedLuck4 = 1;
-        GameData.weaponneedLuck5 = 1;
-        GameData.weaponneedLuck6 = 1;
-        GameData.weaponneedLuck7 = 1;
-        GameData.weaponneedLuck8 = 1;
-        GameData.weaponneedLuck9 = 1;
-        GameData.weaponneedLuck10 = 1;
-        GameData.weaponLuckcount1 = 0;
-        GameData.weaponLuckcount2 = 0;
-        GameData.weaponLuckcount3 = 0;
-        GameData.weaponLuckcount4 = 0;
-        GameData.weaponLuckcount5 = 0;
-        GameData.weaponLuckcount6 = 0;
-        GameData.weaponLuckcount7 = 0;
-        GameData.weaponLuckcount8 = 0;
-        GameData.weaponLuckcount9 = 0;
-        GameData.weaponLuckcount10 = 0;
+        GameData.weaponLuck[0] = 1;
+        GameData.weaponLuck[1] = 1;
+        GameData.weaponLuck[2] = 1;
+        GameData.weaponLuck[3] = 1;
+        GameData.weaponLuck[4] = 1;
+        GameData.weaponLuck[5] = 1;
+        GameData.weaponLuck[6] = 1;
+        GameData.weaponLuck[7] = 1;
+        GameData.weaponLuck[8] = 1;
+        GameData.weaponLuck[9] = 1;
+        GameData.weaponneedLuck[0] = 1;
+        GameData.weaponneedLuck[1] = 1;
+        GameData.weaponneedLuck[2] = 1;
+        GameData.weaponneedLuck[3] = 1;
+        GameData.weaponneedLuck[4] = 1;
+        GameData.weaponneedLuck[5] = 1;
+        GameData.weaponneedLuck[6] = 1;
+        GameData.weaponneedLuck[7] = 1;
+        GameData.weaponneedLuck[8] = 1;
+        GameData.weaponneedLuck[9] = 1;
+        GameData.weaponLuckcount[0] = 0;
+        GameData.weaponLuckcount[1] = 0;
+        GameData.weaponLuckcount[2] = 0;
+        GameData.weaponLuckcount[3] = 0;
+        GameData.weaponLuckcount[4] = 0;
+        GameData.weaponLuckcount[5] = 0;
+        GameData.weaponLuckcount[6] = 0;
+        GameData.weaponLuckcount[7] = 0;
+        GameData.weaponLuckcount[8] = 0;
+        GameData.weaponLuckcount[9] = 0;
     }
 }
 

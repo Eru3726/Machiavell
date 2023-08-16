@@ -122,10 +122,10 @@ public class Playe : MonoBehaviour
 
         if (buki == 1)
         {
-            bukiHP = GameData.weaponHp1;
-            bukiST = GameData.weaponStamina1;
-            bukiDEF = GameData.weaponGuard1;
-            bukiLUC = GameData.weaponLuck1;
+            bukiHP = GameData.weaponHp[0];
+            bukiST = GameData.weaponStamina[0];
+            bukiDEF = GameData.weaponGuard[0];
+            bukiLUC = GameData.weaponLuck[0];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -138,10 +138,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 2)
         {
-            bukiHP = GameData.weaponHp2;
-            bukiST = GameData.weaponStamina2;
-            bukiDEF = GameData.weaponGuard2;
-            bukiLUC = GameData.weaponLuck2;
+            bukiHP = GameData.weaponHp[1];
+            bukiST = GameData.weaponStamina[1];
+            bukiDEF = GameData.weaponGuard[1];
+            bukiLUC = GameData.weaponLuck[1];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -154,10 +154,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 3)
         {
-            bukiHP = GameData.weaponHp3;
-            bukiST = GameData.weaponStamina3;
-            bukiDEF = GameData.weaponGuard3;
-            bukiLUC = GameData.weaponLuck3;
+            bukiHP = GameData.weaponHp[2];
+            bukiST = GameData.weaponStamina[2];
+            bukiDEF = GameData.weaponGuard[2];
+            bukiLUC = GameData.weaponLuck[2];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -170,10 +170,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 4)
         {
-            bukiHP = GameData.weaponHp4;
-            bukiST = GameData.weaponStamina4;
-            bukiDEF = GameData.weaponGuard4;
-            bukiLUC = GameData.weaponLuck4;
+            bukiHP = GameData.weaponHp[3];
+            bukiST = GameData.weaponStamina[3];
+            bukiDEF = GameData.weaponGuard[3];
+            bukiLUC = GameData.weaponLuck[3];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -186,10 +186,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 5)
         {
-            bukiHP = GameData.weaponHp5;
-            bukiST = GameData.weaponStamina5;
-            bukiDEF = GameData.weaponGuard5;
-            bukiLUC = GameData.weaponLuck5;
+            bukiHP = GameData.weaponHp[4];
+            bukiST = GameData.weaponStamina[4];
+            bukiDEF = GameData.weaponGuard[4];
+            bukiLUC = GameData.weaponLuck[4];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -202,10 +202,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 6)
         {
-            bukiHP = GameData.weaponHp6;
-            bukiST = GameData.weaponStamina6;
-            bukiDEF = GameData.weaponGuard6;
-            bukiLUC = GameData.weaponLuck6;
+            bukiHP = GameData.weaponHp[5];
+            bukiST = GameData.weaponStamina[5];
+            bukiDEF = GameData.weaponGuard[5];
+            bukiLUC = GameData.weaponLuck[5];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -218,10 +218,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 7)
         {
-            bukiHP = GameData.weaponHp7;
-            bukiST = GameData.weaponStamina7;
-            bukiDEF = GameData.weaponGuard7;
-            bukiLUC = GameData.weaponLuck7;
+            bukiHP = GameData.weaponHp[6];
+            bukiST = GameData.weaponStamina[6];
+            bukiDEF = GameData.weaponGuard[6];
+            bukiLUC = GameData.weaponLuck[6];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -234,10 +234,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 8)
         {
-            bukiHP = GameData.weaponHp8;
-            bukiST = GameData.weaponStamina8;
-            bukiDEF = GameData.weaponGuard8;
-            bukiLUC = GameData.weaponLuck8;
+            bukiHP = GameData.weaponHp[7];
+            bukiST = GameData.weaponStamina[7];
+            bukiDEF = GameData.weaponGuard[7];
+            bukiLUC = GameData.weaponLuck[7];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -250,10 +250,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 9)
         {
-            bukiHP = GameData.weaponHp9;
-            bukiST = GameData.weaponStamina9;
-            bukiDEF = GameData.weaponGuard9;
-            bukiLUC = GameData.weaponLuck9;
+            bukiHP = GameData.weaponHp[8];
+            bukiST = GameData.weaponStamina[8];
+            bukiDEF = GameData.weaponGuard[8];
+            bukiLUC = GameData.weaponLuck[8];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;
@@ -266,10 +266,10 @@ public class Playe : MonoBehaviour
         }
         else if (buki == 10)
         {
-            bukiHP = GameData.weaponHp10;
-            bukiST = GameData.weaponStamina10;
-            bukiDEF = GameData.weaponGuard10;
-            bukiLUC = GameData.weaponLuck10;
+            bukiHP = GameData.weaponHp[9];
+            bukiST = GameData.weaponStamina[9];
+            bukiDEF = GameData.weaponGuard[9];
+            bukiLUC = GameData.weaponLuck[9];
             weponHP = bukiHP;
             weponST = bukiST;
             weponDEF = bukiDEF;

@@ -10,7 +10,7 @@ public class Kyoukareload : MonoBehaviour
 
     public void KyoukaReload()
     {
-        int[] inventoryWeapon = new int[10] { GameData.inventoryWeapon1, GameData.inventoryWeapon2, GameData.inventoryWeapon3, GameData.inventoryWeapon4, GameData.inventoryWeapon5, GameData.inventoryWeapon6, GameData.inventoryWeapon7, GameData.inventoryWeapon8, GameData.inventoryWeapon9, GameData.inventoryWeapon10 };
+        int[] inventoryWeapon = new int[10] { GameData.inventoryWeapon[0], GameData.inventoryWeapon[1], GameData.inventoryWeapon[2], GameData.inventoryWeapon[3], GameData.inventoryWeapon[4], GameData.inventoryWeapon[5], GameData.inventoryWeapon[6], GameData.inventoryWeapon[7], GameData.inventoryWeapon[8], GameData.inventoryWeapon[9] };
 
         for (int i = 0; i < 10; i++)
         {
@@ -337,61 +337,61 @@ public class Kyoukareload : MonoBehaviour
             {
                 Destroy(dw.pos1);
                 dw.pos1 = null;
-                GameData.inventoryWeapon1 = 999;
+                GameData.inventoryWeapon[0] = 999;
             }
             else if (dw.pos2 == sannsyou)
             {
                 Destroy(dw.pos2);
                 dw.pos2 = null;
-                GameData.inventoryWeapon2 = 999;
+                GameData.inventoryWeapon[1] = 999;
             }
             else if (dw.pos3 == sannsyou)
             {
                 Destroy(dw.pos3);
                 dw.pos3 = null;
-                GameData.inventoryWeapon3 = 999;
+                GameData.inventoryWeapon[2] = 999;
             }
             else if (dw.pos4 == sannsyou)
             {
                 Destroy(dw.pos4);
                 dw.pos4 = null;
-                GameData.inventoryWeapon4 = 999;
+                GameData.inventoryWeapon[3] = 999;
             }
             else if (dw.pos5 == sannsyou)
             {
                 Destroy(dw.pos5);
                 dw.pos5 = null;
-                GameData.inventoryWeapon5 = 999;
+                GameData.inventoryWeapon[4] = 999;
             }
             else if (dw.pos6 == sannsyou)
             {
                 Destroy(dw.pos6);
                 dw.pos6 = null;
-                GameData.inventoryWeapon6 = 999;
+                GameData.inventoryWeapon[5] = 999;
             }
             else if (dw.pos7 == sannsyou)
             {
                 Destroy(dw.pos7);
                 dw.pos7 = null;
-                GameData.inventoryWeapon7 = 999;
+                GameData.inventoryWeapon[6] = 999;
             }
             else if (dw.pos8 == sannsyou)
             {
                 Destroy(dw.pos8);
                 dw.pos8 = null;
-                GameData.inventoryWeapon8 = 999;
+                GameData.inventoryWeapon[7] = 999;
             }
             else if (dw.pos9 == sannsyou)
             {
                 Destroy(dw.pos9);
                 dw.pos9 = null;
-                GameData.inventoryWeapon9 = 999;
+                GameData.inventoryWeapon[8] = 999;
             }
             else if (dw.pos10 == sannsyou)
             {
                 Destroy(dw.pos10);
                 dw.pos10 = null;
-                GameData.inventoryWeapon10 = 999;
+                GameData.inventoryWeapon[9] = 999;
             }
         }
         

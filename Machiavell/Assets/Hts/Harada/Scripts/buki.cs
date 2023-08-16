@@ -40,7 +40,7 @@ public class buki : MonoBehaviour
             if (GameData.soubi == 1)
             {
                 Debug.Log(db.weapons[weaponID].weaponType);
-                weaponID = GameData.inventoryWeapon1;
+                weaponID = GameData.inventoryWeapon[0];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -56,7 +56,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 2)
             {
-                weaponID = GameData.inventoryWeapon2;
+                weaponID = GameData.inventoryWeapon[1];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -72,7 +72,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 3)
             {
-                weaponID = GameData.inventoryWeapon3;
+                weaponID = GameData.inventoryWeapon[2];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -88,7 +88,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 4)
             {
-                weaponID = GameData.inventoryWeapon4;
+                weaponID = GameData.inventoryWeapon[3];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -104,7 +104,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 5)
             {
-                weaponID = GameData.inventoryWeapon5;
+                weaponID = GameData.inventoryWeapon[4];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -120,7 +120,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 6)
             {
-                weaponID = GameData.inventoryWeapon6;
+                weaponID = GameData.inventoryWeapon[5];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -136,7 +136,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 7)
             {
-                weaponID = GameData.inventoryWeapon7;
+                weaponID = GameData.inventoryWeapon[6];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -152,7 +152,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 8)
             {
-                weaponID = GameData.inventoryWeapon8;
+                weaponID = GameData.inventoryWeapon[7];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -168,7 +168,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 9)
             {
-                weaponID = GameData.inventoryWeapon9;
+                weaponID = GameData.inventoryWeapon[8];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;
@@ -184,7 +184,7 @@ public class buki : MonoBehaviour
             }
             else if (GameData.soubi == 10)
             {
-                weaponID = GameData.inventoryWeapon10;
+                weaponID = GameData.inventoryWeapon[9];
                 if (db.weapons[weaponID].weaponType == Weapon.Type.LargeSword)
                 {
                     bukisprits.GetComponent<SpriteRenderer>().sprite = largesword;

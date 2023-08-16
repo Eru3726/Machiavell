@@ -36,61 +36,61 @@ public class Script2 : MonoBehaviour
         Debug.Log(buki);
         if (buki == 1)
         {
-            WeponAtk = GameData.weaponAttack1;
+            WeponAtk = GameData.weaponAttack[0];
             ATK = WeponAtk;
             Debug.Log("buki1");
         }
         else if (buki == 2)
         {
-            WeponAtk = GameData.weaponAttack2;
+            WeponAtk = GameData.weaponAttack[1];
             ATK = WeponAtk;
             Debug.Log("buki2");
         }
         else if (buki == 3)
         {
-            WeponAtk = GameData.weaponAttack3;
+            WeponAtk = GameData.weaponAttack[2];
             ATK = WeponAtk;
             Debug.Log("buki3");
         }
         else if (buki == 4)
         {
-            WeponAtk = GameData.weaponAttack4;
+            WeponAtk = GameData.weaponAttack[3];
             ATK = WeponAtk;
             Debug.Log("buki4");
         }
         else if (buki == 5)
         {
-            WeponAtk = GameData.weaponAttack5;
+            WeponAtk = GameData.weaponAttack[4];
             ATK = WeponAtk;
             Debug.Log("buki5");
         }
         else if (buki == 6)
         {
-            WeponAtk = GameData.weaponAttack6;
+            WeponAtk = GameData.weaponAttack[5];
             ATK = WeponAtk;
             Debug.Log("buki6");
         }
         else if (buki == 7)
         {
-            WeponAtk = GameData.weaponAttack7;
+            WeponAtk = GameData.weaponAttack[6];
             ATK = WeponAtk;
             Debug.Log("buki7");
         }
         else if (buki == 8)
         {
-            WeponAtk = GameData.weaponAttack8;
+            WeponAtk = GameData.weaponAttack[7];
             ATK = WeponAtk;
             Debug.Log("buki8");
         }
         else if (buki == 9)
         {
-            WeponAtk = GameData.weaponAttack9;
+            WeponAtk = GameData.weaponAttack[8];
             ATK = WeponAtk;
             Debug.Log("buki9");
         }
         else if (buki == 10)
         {
-            WeponAtk = GameData.weaponAttack10;
+            WeponAtk = GameData.weaponAttack[9];
             ATK = WeponAtk;
             Debug.Log("buki10");
         }

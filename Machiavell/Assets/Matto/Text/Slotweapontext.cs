@@ -47,23 +47,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  "+GameData.weaponHp1.ToString();
+                hp.text = "HP  "+GameData.weaponHp[0].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina1.ToString();
+                st.text = "ST  " + GameData.weaponStamina[0].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack1.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[0].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard1.ToString();
+                def.text = "DEF " + GameData.weaponGuard[0].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck1.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[0].ToString();
             }
             //Debug.Log("buki1");
         }
@@ -71,23 +71,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp2.ToString();
+                hp.text = "HP  " + GameData.weaponHp[1].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina2.ToString();
+                st.text = "ST  " + GameData.weaponStamina[1].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack2.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[1].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard2.ToString();
+                def.text = "DEF " + GameData.weaponGuard[1].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck2.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[1].ToString();
             }
             //Debug.Log("buki2");
         }
@@ -95,23 +95,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp3.ToString();
+                hp.text = "HP  " + GameData.weaponHp[2].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina3.ToString();
+                st.text = "ST  " + GameData.weaponStamina[2].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack3.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[2].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard3.ToString();
+                def.text = "DEF " + GameData.weaponGuard[2].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck3.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[2].ToString();
             }
             //Debug.Log("buki3");
         }
@@ -120,23 +120,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp4.ToString();
+                hp.text = "HP  " + GameData.weaponHp[3].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina4.ToString();
+                st.text = "ST  " + GameData.weaponStamina[3].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack4.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[3].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard4.ToString();
+                def.text = "DEF " + GameData.weaponGuard[3].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck4.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[3].ToString();
             }
             //Debug.Log("buki4");
         }
@@ -144,23 +144,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp5.ToString();
+                hp.text = "HP  " + GameData.weaponHp[4].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina5.ToString();
+                st.text = "ST  " + GameData.weaponStamina[4].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack5.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[4].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard5.ToString();
+                def.text = "DEF " + GameData.weaponGuard[4].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck5.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[4].ToString();
             }
             //Debug.Log("buki5");
         }
@@ -168,23 +168,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp6.ToString();
+                hp.text = "HP  " + GameData.weaponHp[5].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina6.ToString();
+                st.text = "ST  " + GameData.weaponStamina[5].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack6.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[5].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard6.ToString();
+                def.text = "DEF " + GameData.weaponGuard[5].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck6.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[5].ToString();
             }
             //Debug.Log("buki6");
         }
@@ -192,23 +192,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp7.ToString();
+                hp.text = "HP  " + GameData.weaponHp[6].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina7.ToString();
+                st.text = "ST  " + GameData.weaponStamina[6].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack7.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[6].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard7.ToString();
+                def.text = "DEF " + GameData.weaponGuard[6].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck7.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[6].ToString();
             }
             //Debug.Log("buki7");
         }
@@ -216,23 +216,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp8.ToString();
+                hp.text = "HP  " + GameData.weaponHp[7].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina8.ToString();
+                st.text = "ST  " + GameData.weaponStamina[7].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack8.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[7].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard8.ToString();
+                def.text = "DEF " + GameData.weaponGuard[7].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck8.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[7].ToString();
             }
             //Debug.Log("buki8");
         }
@@ -240,23 +240,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp9.ToString();
+                hp.text = "HP  " + GameData.weaponHp[8].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina9.ToString();
+                st.text = "ST  " + GameData.weaponStamina[8].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack9.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[8].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard9.ToString();
+                def.text = "DEF " + GameData.weaponGuard[8].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck9.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[8].ToString();
             }
             //Debug.Log("buki9");
         }
@@ -264,23 +264,23 @@ public class Slotweapontext : MonoBehaviour
         {
             if (hp)
             {
-                hp.text = "HP  " + GameData.weaponHp10.ToString();
+                hp.text = "HP  " + GameData.weaponHp[9].ToString();
             }
             if (st)
             {
-                st.text = "ST  " + GameData.weaponStamina10.ToString();
+                st.text = "ST  " + GameData.weaponStamina[9].ToString();
             }
             if (atk)
             {
-                atk.text = "ATK " + GameData.weaponAttack10.ToString();
+                atk.text = "ATK " + GameData.weaponAttack[9].ToString();
             }
             if (def)
             {
-                def.text = "DEF " + GameData.weaponGuard10.ToString();
+                def.text = "DEF " + GameData.weaponGuard[9].ToString();
             }
             if (luk)
             {
-                luk.text = "LUK " + GameData.weaponLuck10.ToString();
+                luk.text = "LUK " + GameData.weaponLuck[9].ToString();
             }
             //Debug.Log("buki10");
         }

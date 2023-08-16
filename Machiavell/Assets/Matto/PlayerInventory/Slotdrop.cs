@@ -75,17 +75,17 @@ public class Slotdrop : MonoBehaviour
         prefab = Resources.Load<GameObject>("Prefabs/LargeSword/LargeSword1");
         weaponID = 11;
         Debug.Log("★1の大剣を入手しました");
-        GameData.inventoryWeapon1 = weaponID;
+        GameData.inventoryWeapon[0] = weaponID;
         Debug.Log("drop1");
         GameData.soubi = 1;
         Debug.Log("インベントリ1番に" + weaponID + "が入った！");
-        GameData.weaponRarity1 = db.weapons[weaponID].weaponRarity;
-        GameData.weaponHp1 = db.weapons[weaponID].weaponHp;
-        GameData.weaponStamina1 = db.weapons[weaponID].weaponStamina;
-        GameData.weaponAttack1 = db.weapons[weaponID].weaponAttack;
-        GameData.weaponGuard1 = db.weapons[weaponID].weaponGuard;
-        GameData.weaponLuck1 = db.weapons[weaponID].weaponLuck;
-        GameData.weaponLevel1 = db.weapons[weaponID].weaponLevel;
+        GameData.weaponRarity[0] = db.weapons[weaponID].weaponRarity;
+        GameData.weaponHp[0] = db.weapons[weaponID].weaponHp;
+        GameData.weaponStamina[0] = db.weapons[weaponID].weaponStamina;
+        GameData.weaponAttack[0] = db.weapons[weaponID].weaponAttack;
+        GameData.weaponGuard[0] = db.weapons[weaponID].weaponGuard;
+        GameData.weaponLuck[0] = db.weapons[weaponID].weaponLuck;
+        GameData.weaponLevel[0] = db.weapons[weaponID].weaponLevel;
         Debug.Log("データベース参照");
         Debug.Log("first" + GameData.first);
         GameData.first = false;
@@ -384,7 +384,7 @@ public class Slotdrop : MonoBehaviour
                 //Debug.Log(GameData.inventoryWeapon8);
                 //Debug.Log(GameData.inventoryWeapon9);
                 //Debug.Log(GameData.inventoryWeapon10);
-                if (GameData.inventoryWeapon1 != 999 && GameData.inventoryWeapon1 != 0 && !pos1)
+                if (GameData.inventoryWeapon[0] != 999 && GameData.inventoryWeapon[0] != 0 && !pos1)
                 {
                     position = position1;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -393,10 +393,10 @@ public class Slotdrop : MonoBehaviour
                     pos1 = pos;
                     sc.buki1 = pos1;
                     Debug.Log("weaponID1 " + weaponID);
-                    GameData.inventoryWeapon1 = weaponID;
+                    GameData.inventoryWeapon[0] = weaponID;
                     Debug.Log("read1");
                 }
-                else if (GameData.inventoryWeapon2 != 999 && GameData.inventoryWeapon2 != 0 && !pos2)
+                else if (GameData.inventoryWeapon[1] != 999 && GameData.inventoryWeapon[1] != 0 && !pos2)
                 {
                     position = position2;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -405,10 +405,10 @@ public class Slotdrop : MonoBehaviour
                     pos2 = pos;
                     sc.buki2 = pos2;
                     Debug.Log("weaponID2 " + weaponID);
-                    GameData.inventoryWeapon2 = weaponID;
+                    GameData.inventoryWeapon[1] = weaponID;
                     Debug.Log("read2");
                 }
-                else if (GameData.inventoryWeapon3 != 999 && GameData.inventoryWeapon3 != 0 && !pos3)
+                else if (GameData.inventoryWeapon[2] != 999 && GameData.inventoryWeapon[2] != 0 && !pos3)
                 {
                     position = position3;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -417,10 +417,10 @@ public class Slotdrop : MonoBehaviour
                     pos3 = pos;
                     sc.buki3 = pos3;
                     Debug.Log("weaponID3 " + weaponID);
-                    GameData.inventoryWeapon3 = weaponID;
+                    GameData.inventoryWeapon[2] = weaponID;
                     Debug.Log("read3");
                 }
-                else if (GameData.inventoryWeapon4 != 999 && GameData.inventoryWeapon4 != 0 && !pos4)
+                else if (GameData.inventoryWeapon[3] != 999 && GameData.inventoryWeapon[3] != 0 && !pos4)
                 {
                     position = position4;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -429,10 +429,10 @@ public class Slotdrop : MonoBehaviour
                     pos4 = pos;
                     sc.buki4 = pos4;
                     Debug.Log("weaponID4 " + weaponID);
-                    GameData.inventoryWeapon4 = weaponID;
+                    GameData.inventoryWeapon[3] = weaponID;
                     Debug.Log("read4");
                 }
-                else if (GameData.inventoryWeapon5 != 999 && GameData.inventoryWeapon5 != 0 && !pos5)
+                else if (GameData.inventoryWeapon[4] != 999 && GameData.inventoryWeapon[4] != 0 && !pos5)
                 {
                     position = position5;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -441,10 +441,10 @@ public class Slotdrop : MonoBehaviour
                     pos5 = pos;
                     sc.buki5 = pos5;
                     Debug.Log("weaponID5 " + weaponID);
-                    GameData.inventoryWeapon5 = weaponID;
+                    GameData.inventoryWeapon[4] = weaponID;
                     Debug.Log("read5");
                 }
-                else if (GameData.inventoryWeapon6 != 999 && GameData.inventoryWeapon6 != 0 && !pos6)
+                else if (GameData.inventoryWeapon[5] != 999 && GameData.inventoryWeapon[5] != 0 && !pos6)
                 {
                     position = position6;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -453,10 +453,10 @@ public class Slotdrop : MonoBehaviour
                     pos6 = pos;
                     sc.buki6 = pos6;
                     Debug.Log("weaponID6 " + weaponID);
-                    GameData.inventoryWeapon6 = weaponID;
+                    GameData.inventoryWeapon[5] = weaponID;
                     Debug.Log("read6");
                 }
-                else if (GameData.inventoryWeapon7 != 999 && GameData.inventoryWeapon7 != 0 && !pos7)
+                else if (GameData.inventoryWeapon[6] != 999 && GameData.inventoryWeapon[6] != 0 && !pos7)
                 {
                     position = position7;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -465,10 +465,10 @@ public class Slotdrop : MonoBehaviour
                     pos7 = pos;
                     sc.buki7 = pos7;
                     Debug.Log("weaponID7 " + weaponID);
-                    GameData.inventoryWeapon7 = weaponID;
+                    GameData.inventoryWeapon[6] = weaponID;
                     Debug.Log("read7");
                 }
-                else if (GameData.inventoryWeapon8 != 999 && GameData.inventoryWeapon8 != 0 && !pos8)
+                else if (GameData.inventoryWeapon[7] != 999 && GameData.inventoryWeapon[7] != 0 && !pos8)
                 {
                     position = position8;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -477,10 +477,10 @@ public class Slotdrop : MonoBehaviour
                     pos8 = pos;
                     sc.buki8 = pos8;
                     Debug.Log("weaponID8 " + weaponID);
-                    GameData.inventoryWeapon8 = weaponID;
+                    GameData.inventoryWeapon[7] = weaponID;
                     Debug.Log("read8");
                 }
-                else if (GameData.inventoryWeapon9 != 999 && GameData.inventoryWeapon9 != 0 && !pos9)
+                else if (GameData.inventoryWeapon[8] != 999 && GameData.inventoryWeapon[8] != 0 && !pos9)
                 {
                     position = position9;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -489,10 +489,10 @@ public class Slotdrop : MonoBehaviour
                     pos9 = pos;
                     sc.buki9 = pos9;
                     Debug.Log("weaponID9 " + weaponID);
-                    GameData.inventoryWeapon9 = weaponID;
+                    GameData.inventoryWeapon[8] = weaponID;
                     Debug.Log("read9");
                 }
-                else if (GameData.inventoryWeapon10 != 999 && GameData.inventoryWeapon10 != 0 && !pos10)
+                else if (GameData.inventoryWeapon[9] != 999 && GameData.inventoryWeapon[9] != 0 && !pos10)
                 {
                     position = position10;
                     pos = Instantiate(prefab, position, Quaternion.identity);
@@ -501,7 +501,7 @@ public class Slotdrop : MonoBehaviour
                     pos10 = pos;
                     sc.buki10 = pos10;
                     Debug.Log("weaponID10 " + weaponID);
-                    GameData.inventoryWeapon10 = weaponID;
+                    GameData.inventoryWeapon[9] = weaponID;
                     Debug.Log("read10");
                 }
                 read = false;
@@ -514,7 +514,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos1 = pos;
                 sc.buki1 = pos1;
-                GameData.inventoryWeapon1 = weaponID;
+                GameData.inventoryWeapon[0] = weaponID;
                 Debug.Log("drop1");
             }
             else if (!pos2)
@@ -525,7 +525,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos2 = pos;
                 sc.buki2 = pos2;
-                GameData.inventoryWeapon2 = weaponID;
+                GameData.inventoryWeapon[1] = weaponID;
                 Debug.Log("drop2");
             }
             else if (!pos3)
@@ -536,7 +536,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos3 = pos;
                 sc.buki3 = pos3;
-                GameData.inventoryWeapon3 = weaponID;
+                GameData.inventoryWeapon[2] = weaponID;
                 Debug.Log("drop3");
             }
             else if (!pos4)
@@ -547,7 +547,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos4 = pos;
                 sc.buki4 = pos4;
-                GameData.inventoryWeapon4 = weaponID;
+                GameData.inventoryWeapon[3] = weaponID;
                 Debug.Log("drop4");
             }
             else if (!pos5)
@@ -558,7 +558,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos5 = pos;
                 sc.buki5 = pos5;
-                GameData.inventoryWeapon5 = weaponID;
+                GameData.inventoryWeapon[4] = weaponID;
                 Debug.Log("drop5");
             }
             else if (!pos6)
@@ -569,7 +569,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos6 = pos;
                 sc.buki6 = pos6;
-                GameData.inventoryWeapon6 = weaponID;
+                GameData.inventoryWeapon[5] = weaponID;
                 Debug.Log("drop6");
             }
             else if (!pos7)
@@ -580,7 +580,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos7 = pos;
                 sc.buki7 = pos7;
-                GameData.inventoryWeapon7 = weaponID;
+                GameData.inventoryWeapon[6] = weaponID;
                 Debug.Log("drop7");
             }
             else if (!pos8)
@@ -591,7 +591,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos8 = pos;
                 sc.buki8 = pos8;
-                GameData.inventoryWeapon8 = weaponID;
+                GameData.inventoryWeapon[7] = weaponID;
                 Debug.Log("drop8");
             }
             else if (!pos9)
@@ -602,7 +602,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos9 = pos;
                 sc.buki9 = pos9;
-                GameData.inventoryWeapon9 = weaponID;
+                GameData.inventoryWeapon[8] = weaponID;
                 Debug.Log("drop9");
             }
             else if (!pos10)
@@ -613,7 +613,7 @@ public class Slotdrop : MonoBehaviour
                 pos.transform.localPosition = position;
                 pos10 = pos;
                 sc.buki10 = pos10;
-                GameData.inventoryWeapon10 = weaponID;
+                GameData.inventoryWeapon[9] = weaponID;
                 Debug.Log("drop10");
             }
             else

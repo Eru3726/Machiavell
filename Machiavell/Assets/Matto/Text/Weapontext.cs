@@ -38,132 +38,132 @@ public class Weapontext : MonoBehaviour
             else if (ks.sannsyou == dw.pos1)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp1.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[0].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina1.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[0].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack1.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[0].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard1.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[0].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck1.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[0].ToString();
             }
             else if (ks.sannsyou == dw.pos2)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp2.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[1].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina2.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[1].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack2.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[1].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard2.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[1].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck2.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[1].ToString();
             }
             else if (ks.sannsyou == dw.pos3)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp3.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[2].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina3.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[2].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack3.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[2].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard3.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[2].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck3.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[2].ToString();
             }
             else if (ks.sannsyou == dw.pos4)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp4.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[3].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina4.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[3].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack4.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[3].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard4.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[3].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck4.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[3].ToString();
             }
             else if (ks.sannsyou == dw.pos5)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp5.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[4].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina5.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[4].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack5.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[4].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard5.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[4].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck5.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[4].ToString();
             }
             else if (ks.sannsyou == dw.pos6)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp6.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[5].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina6.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[5].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack6.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[5].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard6.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[5].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck6.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[5].ToString();
             }
             else if (ks.sannsyou == dw.pos7)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp7.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[6].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina7.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[6].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack7.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[6].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard7.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[6].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck7.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[6].ToString();
             }
             else if (ks.sannsyou == dw.pos8)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp8.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[7].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina8.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[7].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack8.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[7].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard8.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[7].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck8.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[7].ToString();
             }
             else if (ks.sannsyou == dw.pos9)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp9.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[8].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina9.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[8].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack9.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[8].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard9.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[8].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck9.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[8].ToString();
             }
             else if (ks.sannsyou == dw.pos10)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp10.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[9].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina10.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[9].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack10.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[9].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard10.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[9].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck10.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[9].ToString();
             }
             else
             {
@@ -197,132 +197,132 @@ public class Weapontext : MonoBehaviour
             else if (ws.sannsyou == dw.pos1)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp1.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[0].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina1.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[0].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack1.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[0].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard1.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[0].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck1.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[0].ToString();
             }
             else if (ws.sannsyou == dw.pos2)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp2.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[1].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina2.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[1].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack2.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[1].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard2.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[1].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck2.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[1].ToString();
             }
             else if (ws.sannsyou == dw.pos3)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp3.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[2].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina3.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[2].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack3.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[2].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard3.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[2].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck3.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[2].ToString();
             }
             else if (ws.sannsyou == dw.pos4)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp4.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[3].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina4.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[3].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack4.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[3].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard4.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[3].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck4.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[3].ToString();
             }
             else if (ws.sannsyou == dw.pos5)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp5.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[4].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina5.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[4].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack5.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[4].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard5.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[4].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck5.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[4].ToString();
             }
             else if (ws.sannsyou == dw.pos6)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp6.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[5].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina6.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[5].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack6.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[5].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard6.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[5].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck6.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[5].ToString();
             }
             else if (ws.sannsyou == dw.pos7)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp7.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[6].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina7.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[6].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack7.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[6].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard7.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[6].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck7.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[6].ToString();
             }
             else if (ws.sannsyou == dw.pos8)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp8.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[7].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina8.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[7].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack8.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[7].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard8.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[7].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck8.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[7].ToString();
             }
             else if (ws.sannsyou == dw.pos9)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp9.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[8].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina9.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[8].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack9.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[8].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard9.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[8].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck9.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[8].ToString();
             }
             else if (ws.sannsyou == dw.pos10)
             {
                 if (weaponhp)
-                    weaponhp.text = "HP  " + GameData.weaponHp10.ToString();
+                    weaponhp.text = "HP  " + GameData.weaponHp[9].ToString();
                 if (weaponstamina)
-                    weaponstamina.text = "ST  " + GameData.weaponStamina10.ToString();
+                    weaponstamina.text = "ST  " + GameData.weaponStamina[9].ToString();
                 if (weaponoffence)
-                    weaponoffence.text = "ATK " + GameData.weaponAttack10.ToString();
+                    weaponoffence.text = "ATK " + GameData.weaponAttack[9].ToString();
                 if (weapondeffence)
-                    weapondeffence.text = "DEF " + GameData.weaponGuard10.ToString();
+                    weapondeffence.text = "DEF " + GameData.weaponGuard[9].ToString();
                 if (weaponluck)
-                    weaponluck.text = "LUK " + GameData.weaponLuck10.ToString();
+                    weaponluck.text = "LUK " + GameData.weaponLuck[9].ToString();
             }
             else
             {

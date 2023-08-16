@@ -11,7 +11,7 @@ public class Slotread : MonoBehaviour
     public bool drop = true;
     public void WeaponReload()
     {
-        int[] inventoryWeapon = new int[10] { GameData.inventoryWeapon1, GameData.inventoryWeapon2, GameData.inventoryWeapon3, GameData.inventoryWeapon4, GameData.inventoryWeapon5, GameData.inventoryWeapon6, GameData.inventoryWeapon7, GameData.inventoryWeapon8, GameData.inventoryWeapon9, GameData.inventoryWeapon10 };
+        int[] inventoryWeapon = new int[10] { GameData.inventoryWeapon[0], GameData.inventoryWeapon[1], GameData.inventoryWeapon[2], GameData.inventoryWeapon[3], GameData.inventoryWeapon[4], GameData.inventoryWeapon[5], GameData.inventoryWeapon[6], GameData.inventoryWeapon[7], GameData.inventoryWeapon[8], GameData.inventoryWeapon[9] };
 
         for (int i = 0; i < 10; i++)
         {
@@ -357,7 +357,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos1);
                     sw.pos1 = null;
-                    GameData.inventoryWeapon1 = 999;
+                    GameData.inventoryWeapon[0] = 999;
                 }
             }
             else if (sw.pos2 == sannsyou)
@@ -370,7 +370,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos2);
                     sw.pos2 = null;
-                    GameData.inventoryWeapon2 = 999;
+                    GameData.inventoryWeapon[1] = 999;
                     Debug.Log("•Ší‚Í‚©[‚¢");
                 }
             }
@@ -384,7 +384,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos3);
                     sw.pos3 = null;
-                    GameData.inventoryWeapon3 = 999;
+                    GameData.inventoryWeapon[2] = 999;
                 }
             }
             else if (sw.pos4 == sannsyou)
@@ -397,7 +397,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos4);
                     sw.pos4 = null;
-                    GameData.inventoryWeapon4 = 999;
+                    GameData.inventoryWeapon[3] = 999;
                 }
             }
             else if (sw.pos5 == sannsyou)
@@ -410,7 +410,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos5);
                     sw.pos5 = null;
-                    GameData.inventoryWeapon5 = 999;
+                    GameData.inventoryWeapon[4] = 999;
                 }
             }
             else if (sw.pos6 == sannsyou)
@@ -423,7 +423,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos6);
                     sw.pos6 = null;
-                    GameData.inventoryWeapon6 = 999;
+                    GameData.inventoryWeapon[5] = 999;
                 }
             }
             else if (sw.pos7 == sannsyou)
@@ -436,7 +436,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos7);
                     sw.pos7 = null;
-                    GameData.inventoryWeapon7 = 999;
+                    GameData.inventoryWeapon[6] = 999;
                 }
             }
             else if (sw.pos8 == sannsyou)
@@ -449,7 +449,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos8);
                     sw.pos8 = null;
-                    GameData.inventoryWeapon8 = 999;
+                    GameData.inventoryWeapon[7] = 999;
                 }
             }
             else if (sw.pos9 == sannsyou)
@@ -462,7 +462,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos9);
                     sw.pos9 = null;
-                    GameData.inventoryWeapon9 = 999;
+                    GameData.inventoryWeapon[8] = 999;
                 }
             }
             else if (sw.pos10 == sannsyou)
@@ -475,7 +475,7 @@ public class Slotread : MonoBehaviour
                 {
                     Destroy(sw.pos10);
                     sw.pos10 = null;
-                    GameData.inventoryWeapon10 = 999;
+                    GameData.inventoryWeapon[9] = 999;
 
                 }
                 //WeaponReload();

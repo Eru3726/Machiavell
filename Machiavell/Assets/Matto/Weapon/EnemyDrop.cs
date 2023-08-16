@@ -109,151 +109,151 @@ public class EnemyDrop : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("weaponID" + weaponID);
-            if (GameData.inventoryWeapon1 == 999)
+            if (GameData.inventoryWeapon[0] == 999)
             {
-                GameData.inventoryWeapon1 = weaponID;
+                GameData.inventoryWeapon[0] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ1番に" + weaponID + "が入った！");
-                GameData.weaponRarity1 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp1 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina1 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack1 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard1 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck1 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel1 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[0] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[0] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[0] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[0] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[0] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[0] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[0] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon2 == 999)
+            else if (GameData.inventoryWeapon[1] == 999)
             {
-                GameData.inventoryWeapon2 = weaponID;
+                GameData.inventoryWeapon[1] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ2番に" + weaponID + "が入った！");
-                GameData.weaponRarity2 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp2 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina2 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack2 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard2 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck2 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel2 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[1] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[1] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[1] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[1] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[1] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[1] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[1] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon3 == 999)
+            else if (GameData.inventoryWeapon[2] == 999)
             {
-                GameData.inventoryWeapon3 = weaponID;
+                GameData.inventoryWeapon[2] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ3番に" + weaponID + "が入った！");
-                GameData.weaponRarity3 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp3 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina3 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack3 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard3 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck3 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel3 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[2] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[2] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[2] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[2] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[2] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[2] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[2] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon4 == 999)
+            else if (GameData.inventoryWeapon[3] == 999)
             {
-                GameData.inventoryWeapon4 = weaponID;
+                GameData.inventoryWeapon[3] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ4番に" + weaponID + "が入った！");
-                GameData.weaponRarity4 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp4 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina4 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack4 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard4 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck4 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel4 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[3] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[3] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[3] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[3] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[3] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[3] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[3] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon5 == 999)
+            else if (GameData.inventoryWeapon[4] == 999)
             {
-                GameData.inventoryWeapon5 = weaponID;
+                GameData.inventoryWeapon[4] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ5番に" + weaponID + "が入った！");
-                GameData.weaponRarity5 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp5 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina5 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack5 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard5 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck5 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel5 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[4] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[4] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[4] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[4] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[4] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[4] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[4] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon6 == 999)
+            else if (GameData.inventoryWeapon[5] == 999)
             {
-                GameData.inventoryWeapon6 = weaponID;
+                GameData.inventoryWeapon[5] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ6番に" + weaponID + "が入った！");
-                GameData.weaponRarity6 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp6 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina6 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack6 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard6 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck6 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel6 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[5] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[5] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[5] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[5] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[5] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[5] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[5] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon7 == 999)
+            else if (GameData.inventoryWeapon[6] == 999)
             {
-                GameData.inventoryWeapon7 = weaponID;
+                GameData.inventoryWeapon[6] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ7番に" + weaponID + "が入った！");
-                GameData.weaponRarity7 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp7 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina7 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack7 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard7 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck7 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel7 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[6] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[6] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[6] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[6] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[6] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[6] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[6] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon8 == 999)
+            else if (GameData.inventoryWeapon[7] == 999)
             {
-                GameData.inventoryWeapon8 = weaponID;
+                GameData.inventoryWeapon[7] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ8番に" + weaponID + "が入った！");
-                GameData.weaponRarity8 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp8 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina8 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack8 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard8 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck8 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel8 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[7] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[7] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[7] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[7] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[7] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[7] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[7] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon9 == 999)
+            else if (GameData.inventoryWeapon[8] == 999)
             {
-                GameData.inventoryWeapon9 = weaponID;
+                GameData.inventoryWeapon[8] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ9番に" + weaponID + "が入った！");
-                GameData.weaponRarity9 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp9 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina9 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack9 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard9 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck9 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel9 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[8] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[8] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[8] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[8] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[8] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[8] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[8] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon10 == 999)
+            else if (GameData.inventoryWeapon[9] == 999)
             {
-                GameData.inventoryWeapon10 = weaponID;
+                GameData.inventoryWeapon[9] = weaponID;
                 Destroy(gameObject);
                 Debug.Log("インベントリ10番に" + weaponID + "が入った！");
-                GameData.weaponRarity10 = db.weapons[weaponID].weaponRarity;
-                GameData.weaponHp10 = db.weapons[weaponID].weaponHp;
-                GameData.weaponStamina10 = db.weapons[weaponID].weaponStamina;
-                GameData.weaponAttack10 = db.weapons[weaponID].weaponAttack;
-                GameData.weaponGuard10 = db.weapons[weaponID].weaponGuard;
-                GameData.weaponLuck10 = db.weapons[weaponID].weaponLuck;
-                GameData.weaponLevel10 = db.weapons[weaponID].weaponLevel;
+                GameData.weaponRarity[9] = db.weapons[weaponID].weaponRarity;
+                GameData.weaponHp[9] = db.weapons[weaponID].weaponHp;
+                GameData.weaponStamina[9] = db.weapons[weaponID].weaponStamina;
+                GameData.weaponAttack[9] = db.weapons[weaponID].weaponAttack;
+                GameData.weaponGuard[9] = db.weapons[weaponID].weaponGuard;
+                GameData.weaponLuck[9] = db.weapons[weaponID].weaponLuck;
+                GameData.weaponLevel[9] = db.weapons[weaponID].weaponLevel;
             }
             else
             {
                 Debug.Log("インベントリがいっぱいです");
             }
             Debug.Log(db.weapons[weaponID].weaponName);
-            Debug.Log("Weapon1" + GameData.inventoryWeapon1);
-            Debug.Log("Weapon2" + GameData.inventoryWeapon2);
-            Debug.Log("Weapon3" + GameData.inventoryWeapon3);
-            Debug.Log("Weapon4" + GameData.inventoryWeapon4);
-            Debug.Log("Weapon5" + GameData.inventoryWeapon5);
-            Debug.Log("Weapon6" + GameData.inventoryWeapon6);
-            Debug.Log("Weapon7" + GameData.inventoryWeapon7);
-            Debug.Log("Weapon8" + GameData.inventoryWeapon8);
-            Debug.Log("Weapon9" + GameData.inventoryWeapon9);
-            Debug.Log("Weapon10" + GameData.inventoryWeapon10);
+            Debug.Log("Weapon1" + GameData.inventoryWeapon[0]);
+            Debug.Log("Weapon2" + GameData.inventoryWeapon[1]);
+            Debug.Log("Weapon3" + GameData.inventoryWeapon[2]);
+            Debug.Log("Weapon4" + GameData.inventoryWeapon[3]);
+            Debug.Log("Weapon5" + GameData.inventoryWeapon[4]);
+            Debug.Log("Weapon6" + GameData.inventoryWeapon[5]);
+            Debug.Log("Weapon7" + GameData.inventoryWeapon[6]);
+            Debug.Log("Weapon8" + GameData.inventoryWeapon[7]);
+            Debug.Log("Weapon9" + GameData.inventoryWeapon[8]);
+            Debug.Log("Weapon10" + GameData.inventoryWeapon[9]);
         }
     }
 }
