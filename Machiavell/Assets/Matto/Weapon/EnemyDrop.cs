@@ -109,7 +109,7 @@ public class EnemyDrop : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("weaponID" + weaponID);
-            if (GameData.inventoryWeapon[0] == 999)
+            if (GameData.inventoryWeapon[0] == 999 || GameData.inventoryWeapon[0] == 0)
             {
                 GameData.inventoryWeapon[0] = weaponID;
                 Destroy(gameObject);
@@ -122,7 +122,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[0] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[0] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[1] == 999)
+            else if (GameData.inventoryWeapon[1] == 999 || GameData.inventoryWeapon[1] == 0)
             {
                 GameData.inventoryWeapon[1] = weaponID;
                 Destroy(gameObject);
@@ -135,7 +135,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[1] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[1] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[2] == 999)
+            else if (GameData.inventoryWeapon[2] == 999 || GameData.inventoryWeapon[2] == 0)
             {
                 GameData.inventoryWeapon[2] = weaponID;
                 Destroy(gameObject);
@@ -148,7 +148,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[2] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[2] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[3] == 999)
+            else if (GameData.inventoryWeapon[3] == 999 || GameData.inventoryWeapon[3] == 0)
             {
                 GameData.inventoryWeapon[3] = weaponID;
                 Destroy(gameObject);
@@ -161,7 +161,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[3] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[3] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[4] == 999)
+            else if (GameData.inventoryWeapon[4] == 999 || GameData.inventoryWeapon[4] == 0)
             {
                 GameData.inventoryWeapon[4] = weaponID;
                 Destroy(gameObject);
@@ -174,7 +174,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[4] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[4] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[5] == 999)
+            else if (GameData.inventoryWeapon[5] == 999 || GameData.inventoryWeapon[5] == 0)
             {
                 GameData.inventoryWeapon[5] = weaponID;
                 Destroy(gameObject);
@@ -187,7 +187,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[5] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[5] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[6] == 999)
+            else if (GameData.inventoryWeapon[6] == 999 || GameData.inventoryWeapon[6] == 0)
             {
                 GameData.inventoryWeapon[6] = weaponID;
                 Destroy(gameObject);
@@ -200,7 +200,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[6] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[6] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[7] == 999)
+            else if (GameData.inventoryWeapon[7] == 999 || GameData.inventoryWeapon[7] == 0)
             {
                 GameData.inventoryWeapon[7] = weaponID;
                 Destroy(gameObject);
@@ -213,7 +213,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[7] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[7] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[8] == 999)
+            else if (GameData.inventoryWeapon[8] == 999 || GameData.inventoryWeapon[8] == 0)
             {
                 GameData.inventoryWeapon[8] = weaponID;
                 Destroy(gameObject);
@@ -226,7 +226,7 @@ public class EnemyDrop : MonoBehaviour
                 GameData.weaponLuck[8] = db.weapons[weaponID].weaponLuck;
                 GameData.weaponLevel[8] = db.weapons[weaponID].weaponLevel;
             }
-            else if (GameData.inventoryWeapon[9] == 999)
+            else if (GameData.inventoryWeapon[9] == 999 || GameData.inventoryWeapon[9] == 0)
             {
                 GameData.inventoryWeapon[9] = weaponID;
                 Destroy(gameObject);
