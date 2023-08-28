@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private MoveLeftRight moveLR;
+
+    private Rigidbody2D rb2d;
+
+    [SerializeField]
+    private float speed;
+    private float moveSpeed;
+
     void Start()
     {
-        
+        moveLR = new MoveLeftRight();
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        speed = moveLR.MoveChk(transform, speed);
+
+        rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
     }
 }
