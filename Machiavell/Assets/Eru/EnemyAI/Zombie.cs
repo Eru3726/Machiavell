@@ -19,7 +19,6 @@ public class Zombie : MonoBehaviour
     void Update()
     {
         speed = moveLR.MoveChk(transform, speed);
-
         rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
     }
 }
