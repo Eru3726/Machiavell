@@ -1,8 +1,10 @@
 using UnityEngine;
 
+[System.Serializable]
 public class MoveLeftRight
 {
     private LayerMask StageLayer = 1 << 18;
+    private float index = 1;
 
     public enum MOVE_TYPE
     {
@@ -10,13 +12,40 @@ public class MoveLeftRight
         RIGHT,
         LEFT,
     }
-    public MOVE_TYPE move = MOVE_TYPE.RIGHT;
+    [Header("移動状態")]
+    public MOVE_TYPE moveType = MOVE_TYPE.RIGHT;
 
-    public float MoveChk(Transform transform, float speed)
+    public enum Chk_TYPE
     {
-        if (!GroundChk(transform) || WallChk(transform)) speed = ChgDIrection(transform, speed);
+        NONE,
+        GROUND,
+        WALL,
+        ALL,
+    }
+    [Header("チェック内容")]
+    public Chk_TYPE chkType = Chk_TYPE.NONE;
 
-        return speed;
+
+    public float MoveChk(Transform transform)
+    {
+        if(chkType == Chk_TYPE.NONE)
+        {
+            index = ChgDIrection(transform);
+        }
+        if (chkType == Chk_TYPE.GROUND)
+        {
+            if (!GroundChk(transform)) index = ChgDIrection(transform);
+        }
+        else if (chkType == Chk_TYPE.WALL)
+        {
+            if (WallChk(transform)) index = ChgDIrection(transform);
+        }
+        else if (chkType == Chk_TYPE.ALL)
+        {
+            if (!GroundChk(transform) || WallChk(transform)) index = ChgDIrection(transform);
+        }
+
+        return index;
     }
 
     private bool GroundChk(Transform transform)
@@ -49,28 +78,31 @@ public class MoveLeftRight
     }
 
     // 方向転換をする
-    private float ChgDIrection(Transform transform, float speed)
+    private float ChgDIrection(Transform transform)
     {
-        if (move == MOVE_TYPE.RIGHT) move = MOVE_TYPE.LEFT;
-        else move = MOVE_TYPE.RIGHT;
-
-        float scale = transform.localScale.x;
-        if (move == MOVE_TYPE.STOP)
+        if (chkType != Chk_TYPE.NONE)
         {
-            speed = 0;
+            if (moveType == MOVE_TYPE.RIGHT) moveType = MOVE_TYPE.LEFT;
+            else moveType = MOVE_TYPE.RIGHT;
         }
-        else if (move == MOVE_TYPE.RIGHT)
+        float _index = 0;
+        float scale = transform.localScale.x;
+        if (moveType == MOVE_TYPE.STOP)
+        {
+            _index = 0;
+        }
+        else if (moveType == MOVE_TYPE.RIGHT)
         {
             scale = Mathf.Abs(scale);
-            speed = Mathf.Abs(speed); 
+            _index = 1; 
         }
-        else if (move == MOVE_TYPE.LEFT)
+        else if (moveType == MOVE_TYPE.LEFT)
         {
             scale = -Mathf.Abs(scale);
-            speed = -Mathf.Abs(speed);
+            _index = -1;
         }
         transform.localScale = new Vector3(scale, transform.localScale.y, transform.localScale.z);
 
-        return speed;
+        return _index;
     }
 }
