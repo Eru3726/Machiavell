@@ -3,7 +3,9 @@ using UnityEngine;
 [System.Serializable]
 public class MoveLeftRight
 {
-    private LayerMask StageLayer = 1 << 18;
+    [Header("ステージのレイヤー")]
+    public LayerMask StageLayer;
+
     private float index = 1;
 
     public enum MOVE_TYPE
