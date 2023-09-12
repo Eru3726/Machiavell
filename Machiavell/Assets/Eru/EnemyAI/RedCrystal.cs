@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RedCrystal : MonoBehaviour
+public class RedCrystal : MonoBehaviour,IDamageable
 {
     [SerializeField, Tooltip("DataBase")]
     private Enemy redCrystal;
@@ -11,8 +11,6 @@ public class RedCrystal : MonoBehaviour
 
     [SerializeField, Tooltip("プレイヤー")]
     private Transform target;
-
-    private int currentHealth;
 
     private Vector2 dir;
 
@@ -25,11 +23,14 @@ public class RedCrystal : MonoBehaviour
 
     [SerializeField, Tooltip("ドロップアイテム")]
     private GameObject drop;
+    public int Health => _health;
+
+    int _health = 10;
 
     void Start()
     {
         //DataBase参照
-        currentHealth = redCrystal.enemyMaxHp;
+        _health = redCrystal.enemyMaxHp;
 
         waitCounter = 0;
 
@@ -73,35 +74,16 @@ public class RedCrystal : MonoBehaviour
     }
 
     /// <summary>
-    /// ダメージ判定
-    /// </summary>
-    /// <param name="collision"></param>
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Attack")
-        {
-            audioSource.PlayOneShot(talisCrystalTakendmg);
-            TakeDamage(GameData.playeroffence);
-            Debug.Log("レッドクリスタルが" + GameData.playerdeffence + "ダメージを受けた");
-        }
-    }
-
-    /// <summary>
     /// ダメージを受けたときの関数
     /// </summary>
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
     {
-        if (damage - redCrystal.enemyDefensePower <= 0)
-        {
-            currentHealth -= 1;
-        }
-        else
-        {
-            currentHealth -= damage - redCrystal.enemyDefensePower;
-        }
+        if (damage - redCrystal.enemyDefensePower <= 0) _health -= 1;
+        else _health -= damage - redCrystal.enemyDefensePower;
+        audioSource.PlayOneShot(talisCrystalTakendmg);
 
-        if (currentHealth <= 0)
+        if (_health <= 0)
         {
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);

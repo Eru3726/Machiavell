@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Talis : MonoBehaviour
+public class Talis : MonoBehaviour, IDamageable
 {
     [SerializeField, Tooltip("DataBase")]
     private Enemy talis;
@@ -20,8 +20,9 @@ public class Talis : MonoBehaviour
 
     [SerializeField, Tooltip("プレイヤー")]
     private Transform target;
+    public int Health => _health;
 
-    private int currentHealth;
+    int _health = 10;
 
     private Vector2 moveDir;
 
@@ -50,7 +51,7 @@ public class Talis : MonoBehaviour
         startPos = gameObject.transform.position;
 
         //DataBase参照
-        currentHealth = talis.enemyMaxHp;
+        _health = talis.enemyMaxHp;
 
         moveCounter = talis.enemyWalkTime;
         isDamage = false;
@@ -203,75 +204,34 @@ public class Talis : MonoBehaviour
     }
 
     /// <summary>
-    /// 攻撃関数
-    /// </summary>
-    
-
-    /// <summary>
-    /// ダメージ判定
-    /// </summary>
-    /// <param name="collision"></param>
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Attack")
-        {
-            if (isDamage)
-            {
-                audioSource.PlayOneShot(talisCrystalTakendmg);
-                TakeDamage(GameData.playeroffence - talis.enemyDefensePower);
-
-                Vector2 dir = transform.position - target.transform.position;
-                dir.Normalize();
-
-                rb.AddForce(dir * talis.enemyKnockBackPower, ForceMode2D.Impulse);
-                blowFlag = true;
-            }
-            else
-            {
-                Debug.Log("ターリスはダメージを受けなかった");
-            }
-        }
-
-        if (collision.gameObject.tag == "Attack")
-        {
-            if (isDamage)
-            {
-                audioSource.PlayOneShot(talisCrystalTakendmg);
-                TakeDamage(GameData.playeroffence - talis.enemyDefensePower);
-
-                Vector2 dir = transform.position - target.transform.position;
-                dir.Normalize();
-
-                rb.AddForce(dir * talis.enemyKnockBackPower, ForceMode2D.Impulse);
-                blowFlag = true;
-            }
-            else
-            {
-                Debug.Log("ターリスはダメージを受けなかった");
-            }
-        }
-
-
-    }
-
-    /// <summary>
     /// ダメージを受けたときの関数
     /// </summary>
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
     {
-        if (damage <= 0)
+        if (isDamage)
         {
-            currentHealth -= 1;
-            Debug.Log("ターリスが1ダメージを受けた");
-        }
-        else
-        {
-            currentHealth -= damage;
-            Debug.Log("ターリスが" + damage + "ダメージを受けた");
-        }
+            if (damage <= 0)
+            {
+                _health -= 1;
+                Debug.Log("ターリスが1ダメージを受けた");
+            }
+            else
+            {
+                _health -= damage;
+                Debug.Log("ターリスが" + damage + "ダメージを受けた");
+            }
 
-        if (currentHealth <= 0)
+            audioSource.PlayOneShot(talisCrystalTakendmg);
+            Vector2 dir = transform.position - target.transform.position;
+            dir.Normalize();
+
+            rb.AddForce(dir * talis.enemyKnockBackPower, ForceMode2D.Impulse);
+            blowFlag = true;
+        }
+        else Debug.Log("ターリスはダメージを受けなかった");
+
+        if (_health <= 0)
         {
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);

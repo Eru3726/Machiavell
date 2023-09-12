@@ -13,7 +13,9 @@ public class BlueCrystal : MonoBehaviour
     [SerializeField, Tooltip("プレイヤー")]
     private Transform target;
 
-    private int currentHealth;
+    public int Health => _health;
+
+    int _health = 10;
 
     private Vector2 dir;
 
@@ -30,7 +32,7 @@ public class BlueCrystal : MonoBehaviour
     void Start()
     {
         //DataBase参照
-        currentHealth = blueCrystal.enemyMaxHp;
+        _health = blueCrystal.enemyMaxHp;
 
         waitCounter = 0;
 
@@ -79,35 +81,16 @@ public class BlueCrystal : MonoBehaviour
     }
 
     /// <summary>
-    /// ダメージ判定
-    /// </summary>
-    /// <param name="collision"></param>
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Attack")
-        {
-            audioSource.PlayOneShot(talisCrystalTakendmg);
-            TakeDamage(GameData.playeroffence);
-            Debug.Log("ブルークリスタルが" + GameData.playerdeffence + "ダメージを受けた");
-        }
-    }
-
-    /// <summary>
     /// ダメージを受けたときの関数
     /// </summary>
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
     {
-        if (damage - blueCrystal.enemyDefensePower <= 0)
-        {
-            currentHealth -= 1;
-        }
-        else
-        {
-            currentHealth -= damage - blueCrystal.enemyDefensePower;
-        }
+        if (damage - blueCrystal.enemyDefensePower <= 0) _health -= 1;
+        else _health -= damage - blueCrystal.enemyDefensePower;
+        audioSource.PlayOneShot(talisCrystalTakendmg);
 
-        if (currentHealth <= 0)
+        if (_health <= 0)
         {
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);

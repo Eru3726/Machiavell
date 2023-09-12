@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Angelus : MonoBehaviour
+public class Angelus : MonoBehaviour, IDamageable
 {
     [SerializeField, Tooltip("DataBase")]
     private Enemy angelus;
@@ -25,8 +25,6 @@ public class Angelus : MonoBehaviour
 
     public float attackDamage;
 
-    private int currentHealth;
-
     private bool blowFlag = false;
 
     [SerializeField, Tooltip("ドロップアイテム")]
@@ -34,6 +32,9 @@ public class Angelus : MonoBehaviour
 
     public AudioClip angelusTakendmg;
     AudioSource audioSource;
+    public int Health => _health;
+
+    int _health = 10;
 
     void Start()
     {
@@ -45,7 +46,7 @@ public class Angelus : MonoBehaviour
 
         //DataBase参照
         attackDamage = angelus.enemyOffensivePower;
-        currentHealth = angelus.enemyMaxHp;
+        _health = angelus.enemyMaxHp;
 
         waitCounter = angelus.enemyWaitTime;
     }
@@ -187,18 +188,6 @@ public class Angelus : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Attack")
-        {
-            TakeDamage(GameData.playerdeffence);
-            Debug.Log("アンゲルスが" + GameData.playerdeffence + "ダメージを受けた");
-            audioSource.PlayOneShot(angelusTakendmg);
-            Vector2 dir = transform.position - target.transform.position;
-            dir.Normalize();
-            rb.velocity = Vector2.zero;
-            rb.AddForce(dir * angelus.enemyKnockBackPower, ForceMode2D.Impulse);
-            blowFlag = true;
-        }
-
         if (collision.gameObject.tag == "Player")
         {
             if (isChaseing)
@@ -212,18 +201,6 @@ public class Angelus : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Attack")
-        {
-            TakeDamage(GameData.playerdeffence);
-            Debug.Log("アンゲルスが" + GameData.playerdeffence + "ダメージを受けた");
-            audioSource.PlayOneShot(angelusTakendmg);
-            Vector2 dir = transform.position - target.transform.position;
-            dir.Normalize();
-            rb.velocity = Vector2.zero;
-            rb.AddForce(dir * angelus.enemyKnockBackPower, ForceMode2D.Impulse);
-            blowFlag = true;
-        }
-
         if (collision.gameObject.tag == "Player")
         {
             if (isChaseing)
@@ -237,21 +214,22 @@ public class Angelus : MonoBehaviour
     }
 
     /// <summary>
-    /// ダメージを受けたときの関数
+    /// ダメージ処理
     /// </summary>
-    /// <param name="damage"></param>
-    public void TakeDamage(int damage)
+    /// <param name="value"></param>
+    public void TakeDamage(int value)
     {
-        if (damage - angelus.enemyDefensePower <= 0)
-        {
-            currentHealth -= 1;
-        }
-        else
-        {
-            currentHealth -= damage - angelus.enemyDefensePower;
-        }
+        if (value - angelus.enemyDefensePower <= 0) _health -= 1;
+        else _health -= value - angelus.enemyDefensePower;
 
-        if (currentHealth <= 0)
+        audioSource.PlayOneShot(angelusTakendmg);
+        Vector2 dir = transform.position - target.transform.position;
+        dir.Normalize();
+        rb.velocity = Vector2.zero;
+        rb.AddForce(dir * angelus.enemyKnockBackPower, ForceMode2D.Impulse);
+        blowFlag = true;
+
+        if (_health <= 0)
         {
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);
