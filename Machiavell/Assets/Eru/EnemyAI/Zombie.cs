@@ -8,7 +8,6 @@ public class Zombie : MonoBehaviour
 
     private int index = 1;
     private bool nonePlayer = true;
-    [SerializeField]
     private bool dashFlg = false;
 
     private float time;

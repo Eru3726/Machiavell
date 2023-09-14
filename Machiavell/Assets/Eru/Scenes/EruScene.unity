@@ -630,7 +630,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 232fba483d735804f8d18faafe2cd804, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -713,7 +713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff4070ee4331db6479173d23d383b4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashFlg: 0
   modeType: 0
   speed: 3
   walkTime: 2
