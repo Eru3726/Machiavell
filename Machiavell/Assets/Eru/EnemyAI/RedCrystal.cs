@@ -9,7 +9,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
 
     private float waitCounter;
 
-    [SerializeField, Tooltip("ƒvƒŒƒCƒ„[")]
+    [SerializeField, Tooltip("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼")]
     private Transform target;
 
     private Vector2 dir;
@@ -21,7 +21,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
     [SerializeField]
     private GameObject blast;
 
-    [SerializeField, Tooltip("ƒhƒƒbƒvƒAƒCƒeƒ€")]
+    [SerializeField, Tooltip("ãƒ‰ãƒ­ãƒƒãƒ—ã‚¢ã‚¤ãƒ†ãƒ ")]
     private GameObject drop;
     public int Health => _health;
 
@@ -29,7 +29,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
 
     void Start()
     {
-        //DataBaseQÆ
+        //DataBaseå‚ç…§
         _health = redCrystal.enemyMaxHp;
 
         waitCounter = 0;
@@ -39,7 +39,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
 
     void Update()
     {
-        //ƒvƒŒƒCƒ„[‚ª‹ß‚­‚É‚¢‚È‚¢‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒè¿‘ãã«ã„ãªã„ã¨ã
         if (!isChaseing)
         {
             if (Vector3.Distance(transform.position, target.transform.position) < redCrystal.enemyRangeToChase)
@@ -47,7 +47,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
                 isChaseing = true;
             }
         }
-        //ƒvƒŒƒCƒ„[‚ª‹ß‚­‚É‚¢‚é‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒè¿‘ãã«ã„ã‚‹ã¨ã
         else
         {
             if (waitCounter > 0)
@@ -65,7 +65,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
     }
 
     /// <summary>
-    /// UŒ‚ŠÖ”
+    /// æ”»æ’ƒé–¢æ•°
     /// </summary>
     public void Shot()
     {
@@ -74,7 +74,7 @@ public class RedCrystal : MonoBehaviour,IDamageable
     }
 
     /// <summary>
-    /// ƒ_ƒ[ƒW‚ğó‚¯‚½‚Æ‚«‚ÌŠÖ”
+    /// ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãŸã¨ãã®é–¢æ•°
     /// </summary>
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
@@ -88,8 +88,8 @@ public class RedCrystal : MonoBehaviour,IDamageable
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);
             GameData.playerexp += redCrystal.enemyExp;
-            Debug.Log("RedCrystal‚ğ“|‚µ‚½");
-            Debug.Log(redCrystal.enemyExp + "‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½");
+            Debug.Log("RedCrystalã‚’å€’ã—ãŸ");
+            Debug.Log(redCrystal.enemyExp + "ã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸ");
         }
     }
 }

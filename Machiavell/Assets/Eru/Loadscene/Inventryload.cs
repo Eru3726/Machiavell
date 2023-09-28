@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +9,7 @@ public class Inventryload : MonoBehaviour
 
     public WeaponRead wr;
     public Kyoukareload kr;
-    // Start is called before the first frame update
+
     void Start()
     {
         readClass.enabled = true;
@@ -20,17 +19,11 @@ public class Inventryload : MonoBehaviour
             kr.KyoukaDelete();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Rightload()
     {
         saveClass.enabled = true;
         readClass.enabled = true;
         StartCoroutine(statusLoad());
-        
     }
     public void Leftload()
     {

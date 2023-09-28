@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour
@@ -20,22 +19,22 @@ public class Zombie : MonoBehaviour
         SLOWFAST,
         POISON,
     }
-    [SerializeField, Header("ƒ]ƒ“ƒrƒ‚[ƒh")]
+    [SerializeField, Header("ã‚¾ãƒ³ãƒ“ãƒ¢ãƒ¼ãƒ‰")]
     private MODE_TYPE modeType = MODE_TYPE.NORMAL;
 
-    [SerializeField,Header("ˆÚ“®‘¬“x")]
+    [SerializeField,Header("ç§»å‹•é€Ÿåº¦")]
     private float speed;
 
-    [SerializeField, Header("‰•œŠÔ")]
+    [SerializeField, Header("å¾€å¾©æ™‚é–“")]
     private float walkTime = 2f;
 
-    [SerializeField, Header("•Ç”»’è‚ÌƒŒƒCİ’è")]
+    [SerializeField, Header("å£åˆ¤å®šã®ãƒ¬ã‚¤è¨­å®š")]
     private RayLine wallChk = new RayLine();
 
-    [SerializeField, Header("°”»’è‚ÌƒŒƒCİ’è")]
+    [SerializeField, Header("åºŠåˆ¤å®šã®ãƒ¬ã‚¤è¨­å®š")]
     private RayLine groundChk = new RayLine();
 
-    [SerializeField, Header("ƒvƒŒƒCƒ„[ŒŸ’m‚ÌƒŒƒCİ’è")]
+    [SerializeField, Header("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼æ¤œçŸ¥ã®ãƒ¬ã‚¤è¨­å®š")]
     private RayCircle playerChk = new RayCircle();
 
     void Start()
@@ -53,7 +52,7 @@ public class Zombie : MonoBehaviour
         else if (modeType == MODE_TYPE.POISON) PoisonMode();
 
 
-        //ƒvƒŒƒCƒ„[ŒŸ’m
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼æ¤œçŸ¥
         if (playerChk.CircleChk() != null)
         {
             player = playerChk.CircleChk();
@@ -68,7 +67,7 @@ public class Zombie : MonoBehaviour
 
     private void NormalMode()
     {
-        //ƒvƒŒƒCƒ„[‚ª‚¢‚È‚¢‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã„ãªã„ã¨ã
         if (nonePlayer)
         {
             time -= Time.deltaTime;
@@ -77,7 +76,7 @@ public class Zombie : MonoBehaviour
 
             rb2d.velocity = new Vector2(speed * index, rb2d.velocity.y);
         }
-        //ƒvƒŒƒCƒ„[‚ª‚¢‚é‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã„ã‚‹ã¨ã
         else
         {
             if (player == null) return;
@@ -102,14 +101,14 @@ public class Zombie : MonoBehaviour
     {
         time -= Time.deltaTime;
 
-        //ƒvƒŒƒCƒ„[‚ª‚¢‚È‚¢‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã„ãªã„ã¨ã
         if (nonePlayer && !dashFlg)
         {
             if (wallChk.LineChk() || !groundChk.LineChk() || time <= 0) DirChange();
 
             rb2d.velocity = new Vector2(speed * index, rb2d.velocity.y);
         }
-        //ƒvƒŒƒCƒ„[‚ª‚¢‚é‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã„ã‚‹ã¨ã
         else
         {
             Vector2 moveDir = new Vector2();
@@ -155,7 +154,7 @@ public class Zombie : MonoBehaviour
     }
 
     /// <summary>
-    /// •ûŒü•ÏX
+    /// æ–¹å‘å¤‰æ›´
     /// </summary>
     private void DirChange()
     {

@@ -5,16 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Weapon", menuName = "DataBase/CreateWeapon")]
 public class Weapon : ScriptableObject
 {
-    public Type weaponType;             //í—Ş
-    public int weaponRarity;            //ƒŒƒA“x
-    public String weaponName;           //–¼‘O
-    public Sprite weaponSprite;         //‰æ‘œ
-    public int weaponHp;                //‘Ì—Í
-    public int weaponStamina;           //ƒXƒ^ƒ~ƒi
-    public int weaponAttack;            //UŒ‚—Í
-    public int weaponGuard;             //–hŒä—Í
-    public int weaponLuck;              //‰^
-    public int weaponLevel;             //ƒŒƒxƒ‹
+    public Type weaponType;             //ç¨®é¡
+    public int weaponRarity;            //ãƒ¬ã‚¢åº¦
+    public String weaponName;           //åå‰
+    public Sprite weaponSprite;         //ç”»åƒ
+    public int weaponHp;                //ä½“åŠ›
+    public int weaponStamina;           //ã‚¹ã‚¿ãƒŸãƒŠ
+    public int weaponAttack;            //æ”»æ’ƒåŠ›
+    public int weaponGuard;             //é˜²å¾¡åŠ›
+    public int weaponLuck;              //é‹
+    public int weaponLevel;             //ãƒ¬ãƒ™ãƒ«
 
     public enum Type
     {

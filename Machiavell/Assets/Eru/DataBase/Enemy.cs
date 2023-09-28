@@ -5,24 +5,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Enemy", menuName = "DataBase/CreateEnemy")]
 public class Enemy : ScriptableObject
 {
-    public Type enemyType;              //í—Ş
-    public String enemyName;            //–¼‘O
-    public Sprite enemySprite;          //‰æ‘œ
-    public int enemyMaxHp;              //‘Ì—Í
-    public int enemyOffensivePower;     //UŒ‚—Í
-    public int enemyDefensePower;       //–hŒä—Í
-    public float enemyMoveSpeed;        //‘¬“x
-    public float enemyWaitTime;         //‘Ò‚¿ŠÔ
-    public float enemyWalkTime;         //“®‚­ŠÔ
-    public float enemyChaseSpeed;       //’Ç‚¢‚©‚¯‚é‘¬“x
-    public float enemyRangeToChase;     //‹C‚Ã‚­”ÍˆÍ
-    public float enemyWaitAfterHitting; //UŒ‚ŠÔŠu
-    public float enemyKnockBackPower;   //ƒmƒbƒNƒoƒbƒN
-    public float enemyAria;             //ˆÚ“®‰Â”\‹——£
-    public int enemyExp;                //ŒoŒ±’l
-    public int enemyBeamAtk;                 //ƒr[ƒ€‚ÌUŒ‚—Í
-    public int enemyGodLodAtk;               //_‚Ìñ‚ÌUŒ‚—Í
-    public int enemyWaveAtk;               //_‚Ìñ‚ÌUŒ‚—Í
+    public Type enemyType;              //ç¨®é¡
+    public String enemyName;            //åå‰
+    public Sprite enemySprite;          //ç”»åƒ
+    public int enemyMaxHp;              //ä½“åŠ›
+    public int enemyOffensivePower;     //æ”»æ’ƒåŠ›
+    public int enemyDefensePower;       //é˜²å¾¡åŠ›
+    public float enemyMoveSpeed;        //é€Ÿåº¦
+    public float enemyWaitTime;         //å¾…ã¡æ™‚é–“
+    public float enemyWalkTime;         //å‹•ãæ™‚é–“
+    public float enemyChaseSpeed;       //è¿½ã„ã‹ã‘ã‚‹é€Ÿåº¦
+    public float enemyRangeToChase;     //æ°—ã¥ãç¯„å›²
+    public float enemyWaitAfterHitting; //æ”»æ’ƒé–“éš”
+    public float enemyKnockBackPower;   //ãƒãƒƒã‚¯ãƒãƒƒã‚¯
+    public float enemyAria;             //ç§»å‹•å¯èƒ½è·é›¢
+    public int enemyExp;                //çµŒé¨“å€¤
+    public int enemyBeamAtk;                 //ãƒ“ãƒ¼ãƒ ã®æ”»æ’ƒåŠ›
+    public int enemyGodLodAtk;               //ç¥ã®æ–ã®æ”»æ’ƒåŠ›
+    public int enemyWaveAtk;               //ç¥ã®æ–ã®æ”»æ’ƒåŠ›
 
     public enum Type
     {

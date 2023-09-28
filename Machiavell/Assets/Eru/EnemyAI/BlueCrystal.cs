@@ -10,7 +10,7 @@ public class BlueCrystal : MonoBehaviour
 
     private float waitCounter;
 
-    [SerializeField, Tooltip("ƒvƒŒƒCƒ„[")]
+    [SerializeField, Tooltip("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼")]
     private Transform target;
 
     public int Health => _health;
@@ -22,7 +22,7 @@ public class BlueCrystal : MonoBehaviour
     [SerializeField]
     private GameObject laser;
 
-    [SerializeField, Tooltip("ƒhƒƒbƒvƒAƒCƒeƒ€")]
+    [SerializeField, Tooltip("ãƒ‰ãƒ­ãƒƒãƒ—ã‚¢ã‚¤ãƒ†ãƒ ")]
     private GameObject drop;
 
     public AudioClip talisCrystalShot;
@@ -31,7 +31,7 @@ public class BlueCrystal : MonoBehaviour
 
     void Start()
     {
-        //DataBaseQÆ
+        //DataBaseå‚ç…§
         _health = blueCrystal.enemyMaxHp;
 
         waitCounter = 0;
@@ -41,7 +41,7 @@ public class BlueCrystal : MonoBehaviour
 
     void Update()
     {
-        //ƒvƒŒƒCƒ„[‚ª‹ß‚­‚É‚¢‚È‚¢‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒè¿‘ãã«ã„ãªã„ã¨ã
         if (!isChaseing)
         {
             if (Vector3.Distance(transform.position, target.transform.position) < blueCrystal.enemyRangeToChase)
@@ -49,7 +49,7 @@ public class BlueCrystal : MonoBehaviour
                 isChaseing = true;
             }
         }
-        //ƒvƒŒƒCƒ„[‚ª‹ß‚­‚É‚¢‚é‚Æ‚«
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒè¿‘ãã«ã„ã‚‹ã¨ã
         else
         {
             if(waitCounter > 0)
@@ -67,7 +67,7 @@ public class BlueCrystal : MonoBehaviour
     }
 
     /// <summary>
-    /// UŒ‚ŠÖ”
+    /// æ”»æ’ƒé–¢æ•°
     /// </summary>
     public void Shot()
     {
@@ -81,7 +81,7 @@ public class BlueCrystal : MonoBehaviour
     }
 
     /// <summary>
-    /// ƒ_ƒ[ƒW‚ğó‚¯‚½‚Æ‚«‚ÌŠÖ”
+    /// ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãŸã¨ãã®é–¢æ•°
     /// </summary>
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
@@ -95,8 +95,8 @@ public class BlueCrystal : MonoBehaviour
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);
             GameData.playerexp += blueCrystal.enemyExp;
-            Debug.Log("BlueCrystal‚ğ“|‚µ‚½");
-            Debug.Log(blueCrystal.enemyExp + "‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½");
+            Debug.Log("BlueCrystalã‚’å€’ã—ãŸ");
+            Debug.Log(blueCrystal.enemyExp + "ã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸ");
         }
     }
 }

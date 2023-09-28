@@ -1,5 +1,5 @@
 using UnityEngine;
-//ƒZ[ƒu‚·‚é‚½‚ß‚Ì€–Ú
+//ã‚»ãƒ¼ãƒ–ã™ã‚‹ãŸã‚ã®é …ç›®
 
 [System.Serializable]
 public class SaveData
@@ -49,23 +49,23 @@ public class SaveData
 
     public int[] weaponLevel = new int[10];
 
-    public int playerexp = 0;       //ŒoŒ±’l
-    public int playerlevel = 1;            //ƒvƒŒƒCƒ„[‚ÌƒŒƒxƒ‹
-    public int needEXP = 1;@@@@@@@//ƒŒƒxƒ‹‚ğ‚ ‚°‚é‚½‚ß‚É•K—v‚ÈŒoŒ±’l
-    public int needEXPcount = 0;@@@@@@@//‰½‰ñ‚©‚Éˆê‰ñƒŒƒxƒ‹‚ğ‚ ‚°‚é‚½‚ß‚É•K—v‚ÈŒoŒ±’l‚ğ‘‚â‚·
-    public int playerhp = 100;@@@@@@@@@@//ƒvƒŒƒCƒ„[‚Ì‘Ì—Í
-    public int playerhpnow = 100;                //ƒvƒŒƒCƒ„[‚ÌŒ»İ‚Ì‘Ì—Í
-    public int playerstamina = 100;@@@@@@@@@ //ƒvƒŒƒCƒ„[‚ÌƒXƒ^ƒ~ƒi
-    public int playeroffence = 1;                   //ƒvƒŒƒCƒ„[‚ÌUŒ‚
-    public int playerdeffence = 1;                   //ƒvƒŒƒCƒ„[‚Ì–hŒä
-    public int playerluck = 1;                   //ƒvƒŒƒCƒ„[‚Ì‰^
-    public int playerstatuspoint = 0;                   //ƒvƒŒƒCƒ„[‚ÌƒXƒe[ƒ^ƒXƒ|ƒCƒ“ƒg
-    public int playerneedsp = 1;               //ƒXƒe[ƒ^ƒX‹­‰»‚É•K—v‚ÈƒXƒe[ƒ^ƒXƒ|ƒCƒ“ƒg
-    public int needspcount = 0;                //‰½‰ñ‚©‚É‚Â‚«ˆê‰ñneedsp‘‚â‚·‚½‚ß‚Ì‚â‚Â
+    public int playerexp = 0;       //çµŒé¨“å€¤
+    public int playerlevel = 1;            //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ãƒ¬ãƒ™ãƒ«
+    public int needEXP = 1;ã€€ã€€ã€€ã€€ã€€ã€€ã€€//ãƒ¬ãƒ™ãƒ«ã‚’ã‚ã’ã‚‹ãŸã‚ã«å¿…è¦ãªçµŒé¨“å€¤
+    public int needEXPcount = 0;ã€€ã€€ã€€ã€€ã€€ã€€ã€€//ä½•å›ã‹ã«ä¸€å›ãƒ¬ãƒ™ãƒ«ã‚’ã‚ã’ã‚‹ãŸã‚ã«å¿…è¦ãªçµŒé¨“å€¤ã‚’å¢—ã‚„ã™
+    public int playerhp = 100;ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ä½“åŠ›
+    public int playerhpnow = 100;                //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ç¾åœ¨ã®ä½“åŠ›
+    public int playerstamina = 100;ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¹ã‚¿ãƒŸãƒŠ
+    public int playeroffence = 1;                   //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æ”»æ’ƒ
+    public int playerdeffence = 1;                   //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®é˜²å¾¡
+    public int playerluck = 1;                   //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®é‹
+    public int playerstatuspoint = 0;                   //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒã‚¤ãƒ³ãƒˆ
+    public int playerneedsp = 1;               //ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹å¼·åŒ–ã«å¿…è¦ãªã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒã‚¤ãƒ³ãƒˆ
+    public int needspcount = 0;                //ä½•å›ã‹ã«ã¤ãä¸€å›needspå¢—ã‚„ã™ãŸã‚ã®ã‚„ã¤
     public int soubi = 1;
     public bool first = true;
 
-    public bool sky = true;@@@@@@@@@ //“V‹ó_“a‚É‚¢‚é‚±‚Æ
-    public bool save = false;                 //ƒZ[ƒuƒ|ƒCƒ“ƒg‚É‚¢‚é‚±‚Æ
-    public float healpotion = 0;        //ƒq[ƒ‹ƒ|[ƒVƒ‡ƒ“
+    public bool sky = true;ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ //å¤©ç©ºç¥æ®¿ã«ã„ã‚‹ã“ã¨
+    public bool save = false;                 //ã‚»ãƒ¼ãƒ–ãƒã‚¤ãƒ³ãƒˆã«ã„ã‚‹ã“ã¨
+    public float healpotion = 0;        //ãƒ’ãƒ¼ãƒ«ãƒãƒ¼ã‚·ãƒ§ãƒ³
 }

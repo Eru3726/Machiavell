@@ -11,7 +11,7 @@ public class BlueCrystalLaser : MonoBehaviour
 
     void Start()
     {
-        //DataBase参照
+        //DataBase蜿ら�ｧ
         attackDamage = crystal.enemyOffensivePower;
         deleteTime = crystal.enemyWalkTime;
     }
@@ -30,8 +30,8 @@ public class BlueCrystalLaser : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //プレイヤーへのダメージなどのプログラムはここに
-            Debug.Log("クリスタルレーザーがプレイヤーにダメージ");
+            //繝励Ξ繧､繝､繝ｼ縺ｸ縺ｮ繝繝｡繝ｼ繧ｸ縺ｪ縺ｩ縺ｮ繝励Ο繧ｰ繝ｩ繝縺ｯ縺薙％縺ｫ
+            Debug.Log("繧ｯ繝ｪ繧ｹ繧ｿ繝ｫ繝ｬ繝ｼ繧ｶ繝ｼ縺後�励Ξ繧､繝､繝ｼ縺ｫ繝繝｡繝ｼ繧ｸ");
             Destroy(gameObject);
         }
 

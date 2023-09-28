@@ -12,13 +12,13 @@ public class Angelus : MonoBehaviour, IDamageable
 
     private Vector2 moveDir;
 
-    [SerializeField, Tooltip("ƒvƒŒƒCƒ„[‚ğ’Ç‚¢‚©‚¯‚é”»’è")]
+    [SerializeField, Tooltip("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’è¿½ã„ã‹ã‘ã‚‹åˆ¤å®š")]
     private bool chase = true;
 
     [SerializeField]
     private bool isChaseing;
 
-    [SerializeField, Tooltip("ƒvƒŒƒCƒ„[")]
+    [SerializeField, Tooltip("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼")]
     private Transform target;
 
     private Vector3 startPos;
@@ -27,7 +27,7 @@ public class Angelus : MonoBehaviour, IDamageable
 
     private bool blowFlag = false;
 
-    [SerializeField, Tooltip("ƒhƒƒbƒvƒAƒCƒeƒ€")]
+    [SerializeField, Tooltip("ãƒ‰ãƒ­ãƒƒãƒ—ã‚¢ã‚¤ãƒ†ãƒ ")]
     private GameObject drop;
 
     public AudioClip angelusTakendmg;
@@ -44,7 +44,7 @@ public class Angelus : MonoBehaviour, IDamageable
 
         audioSource = GetComponent<AudioSource>();
 
-        //DataBaseQÆ
+        //DataBaseå‚ç…§
         attackDamage = angelus.enemyOffensivePower;
         _health = angelus.enemyMaxHp;
 
@@ -65,10 +65,10 @@ public class Angelus : MonoBehaviour, IDamageable
 
         if (chase)
         {
-            //ƒvƒŒƒCƒ„[‚ğ’Ç‚¢‚©‚¯‚Ä‚¢‚È‚¢‚Æ‚«
+            //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’è¿½ã„ã‹ã‘ã¦ã„ãªã„ã¨ã
             if (!isChaseing)
             {
-                //“®‚¢‚Ä‚¢‚È‚¢‚Æ‚«
+                //å‹•ã„ã¦ã„ãªã„ã¨ã
                 if (waitCounter > 0)
                 {
                     waitCounter -= Time.deltaTime;
@@ -82,17 +82,17 @@ public class Angelus : MonoBehaviour, IDamageable
 
                         if (moveDir.x <= 0)
                         {
-                            transform.localScale = new Vector3(4f, transform.localScale.y, transform.localScale.z);  //‰EŒü‚«
+                            transform.localScale = new Vector3(4f, transform.localScale.y, transform.localScale.z);  //å³å‘ã
                         }
                         else
                         {
-                            transform.localScale = new Vector3(-4f, transform.localScale.y, transform.localScale.z);  //¶Œü‚«
+                            transform.localScale = new Vector3(-4f, transform.localScale.y, transform.localScale.z);  //å·¦å‘ã
                         }
 
                         moveDir.Normalize();
                     }
                 }
-                //“®‚¢‚Ä‚¢‚é‚Æ‚«
+                //å‹•ã„ã¦ã„ã‚‹ã¨ã
                 else
                 {
                     moveCounter -= Time.deltaTime;
@@ -113,7 +113,7 @@ public class Angelus : MonoBehaviour, IDamageable
                     }
                 }
             }
-            //ƒvƒŒƒCƒ„[‚ğ’Ç‚¢‚©‚¯‚Ä‚¢‚é‚Æ‚«
+            //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’è¿½ã„ã‹ã‘ã¦ã„ã‚‹ã¨ã
             else
             {
                 if (waitCounter > 0)
@@ -130,11 +130,11 @@ public class Angelus : MonoBehaviour, IDamageable
 
                     if (moveDir.x <= 0)
                     {
-                        transform.localScale = new Vector3(4f, transform.localScale.y, transform.localScale.z);  //‰EŒü‚«
+                        transform.localScale = new Vector3(4f, transform.localScale.y, transform.localScale.z);  //å³å‘ã
                     }
                     else
                     {
-                        transform.localScale = new Vector3(-4f, transform.localScale.y, transform.localScale.z);  //¶Œü‚«
+                        transform.localScale = new Vector3(-4f, transform.localScale.y, transform.localScale.z);  //å·¦å‘ã
                     }
                 }
 
@@ -147,7 +147,7 @@ public class Angelus : MonoBehaviour, IDamageable
             }
         }
 
-        //ƒGƒŠƒAŠO‚És‚©‚È‚¢‚æ‚¤‚É‚·‚é
+        //ã‚¨ãƒªã‚¢å¤–ã«è¡Œã‹ãªã„ã‚ˆã†ã«ã™ã‚‹
 
         float dist = Vector3.Distance(target.transform.position, startPos);
         if (dist > angelus.enemyAria)
@@ -167,11 +167,11 @@ public class Angelus : MonoBehaviour, IDamageable
 
                 if (moveDir.x <= 0)
                 {
-                    transform.localScale = new Vector3(4f, transform.localScale.y, transform.localScale.z);  //‰EŒü‚«
+                    transform.localScale = new Vector3(4f, transform.localScale.y, transform.localScale.z);  //å³å‘ã
                 }
                 else
                 {
-                    transform.localScale = new Vector3(-4f, transform.localScale.y, transform.localScale.z);  //¶Œü‚«
+                    transform.localScale = new Vector3(-4f, transform.localScale.y, transform.localScale.z);  //å·¦å‘ã
                 }
             }
         }
@@ -183,7 +183,7 @@ public class Angelus : MonoBehaviour, IDamageable
 
 
     /// <summary>
-    /// UŒ‚ŠÖ”
+    /// æ”»æ’ƒé–¢æ•°
     /// </summary>
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
@@ -192,8 +192,8 @@ public class Angelus : MonoBehaviour, IDamageable
         {
             if (isChaseing)
             {
-                //ƒvƒŒƒCƒ„[‚Ö‚Ìƒ_ƒ[ƒW‚È‚Ç‚ÌƒvƒƒOƒ‰ƒ€‚Í‚±‚±‚É
-                Debug.Log("ƒAƒ“ƒQƒ‹ƒX‚ªƒvƒŒƒCƒ„[‚Éƒ_ƒ[ƒW");
+                //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¸ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ãªã©ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã“ã“ã«
+                Debug.Log("ã‚¢ãƒ³ã‚²ãƒ«ã‚¹ãŒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«ãƒ€ãƒ¡ãƒ¼ã‚¸");
 
                 waitCounter = angelus.enemyWaitAfterHitting;
             }
@@ -205,8 +205,8 @@ public class Angelus : MonoBehaviour, IDamageable
         {
             if (isChaseing)
             {
-                //ƒvƒŒƒCƒ„[‚Ö‚Ìƒ_ƒ[ƒW‚È‚Ç‚ÌƒvƒƒOƒ‰ƒ€‚Í‚±‚±‚É
-                Debug.Log("ƒAƒ“ƒQƒ‹ƒX‚ªƒvƒŒƒCƒ„[‚Éƒ_ƒ[ƒW");
+                //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¸ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ãªã©ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã“ã“ã«
+                Debug.Log("ã‚¢ãƒ³ã‚²ãƒ«ã‚¹ãŒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«ãƒ€ãƒ¡ãƒ¼ã‚¸");
 
                 waitCounter = angelus.enemyWaitAfterHitting;
             }
@@ -214,7 +214,7 @@ public class Angelus : MonoBehaviour, IDamageable
     }
 
     /// <summary>
-    /// ƒ_ƒ[ƒWˆ—
+    /// ãƒ€ãƒ¡ãƒ¼ã‚¸å‡¦ç†
     /// </summary>
     /// <param name="value"></param>
     public void TakeDamage(int value)
@@ -234,8 +234,8 @@ public class Angelus : MonoBehaviour, IDamageable
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);
             GameData.playerexp += angelus.enemyExp;
-            Debug.Log("Angelus‚ğ“|‚µ‚½");
-            Debug.Log(angelus.enemyExp + "‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½");
+            Debug.Log("Angelusã‚’å€’ã—ãŸ");
+            Debug.Log(angelus.enemyExp + "ã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸ");
         }
     }
 }

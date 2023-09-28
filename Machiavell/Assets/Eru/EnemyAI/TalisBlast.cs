@@ -11,7 +11,7 @@ public class TalisBlast : MonoBehaviour
 
     void Start()
     {
-        //DataBase参照
+        //DataBase蜿ら�ｧ
         attackDamage = talis.enemyOffensivePower;
         deleteTime = talis.enemyWalkTime;
     }
@@ -30,8 +30,8 @@ public class TalisBlast : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //プレイヤーへのダメージなどのプログラムはここに
-            Debug.Log("ターリスブラストがプレイヤーにダメージ");
+            //繝励Ξ繧､繝､繝ｼ縺ｸ縺ｮ繝繝｡繝ｼ繧ｸ縺ｪ縺ｩ縺ｮ繝励Ο繧ｰ繝ｩ繝縺ｯ縺薙％縺ｫ
+            Debug.Log("繧ｿ繝ｼ繝ｪ繧ｹ繝悶Λ繧ｹ繝医′繝励Ξ繧､繝､繝ｼ縺ｫ繝繝｡繝ｼ繧ｸ");
             Destroy(gameObject);
         }
 

@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "exp", menuName = "DataBase/Createexp")]
 public class Exp : ScriptableObject
 {
-    public Type expType;               //í—Ş
-    public String expName;             //–¼‘O
-    public Sprite expSprite;           //‰æ‘œ
-    public int getexp;          //ŒoŒ±’l
+    public Type expType;               //ç¨®é¡
+    public String expName;             //åå‰
+    public Sprite expSprite;           //ç”»åƒ
+    public int getexp;          //çµŒé¨“å€¤
 
     public enum Type
     {

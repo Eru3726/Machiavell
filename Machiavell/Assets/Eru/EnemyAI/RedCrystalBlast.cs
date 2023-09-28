@@ -15,7 +15,7 @@ public class RedCrystalBlast : MonoBehaviour
 
     void Start()
     {
-        //DataBase参照
+        //DataBase蜿ら�ｧ
         attackDamage = redCrystal.enemyOffensivePower;
         deleteTime = redCrystal.enemyWalkTime;
     }
@@ -54,8 +54,8 @@ public class RedCrystalBlast : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            //プレイヤーへのダメージなどのプログラムはここに
-            Debug.Log("レッドクリスタルブラストがプレイヤーにダメージ");
+            //繝励Ξ繧､繝､繝ｼ縺ｸ縺ｮ繝繝｡繝ｼ繧ｸ縺ｪ縺ｩ縺ｮ繝励Ο繧ｰ繝ｩ繝縺ｯ縺薙％縺ｫ
+            Debug.Log("繝ｬ繝�繝峨け繝ｪ繧ｹ繧ｿ繝ｫ繝悶Λ繧ｹ繝医′繝励Ξ繧､繝､繝ｼ縺ｫ繝繝｡繝ｼ繧ｸ");
             Destroy(gameObject);
         }
 

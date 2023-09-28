@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class titleinstance : MonoBehaviour
@@ -9,16 +7,7 @@ public class titleinstance : MonoBehaviour
     //public GameObject volume;
     public GameObject titlecanvas;
     public GameObject tutrialcanvas;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void configinstance()
     {
         pause.SetActive(false);

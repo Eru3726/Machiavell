@@ -18,7 +18,7 @@ public class Talis : MonoBehaviour, IDamageable
 
     private float moveCounter;
 
-    [SerializeField, Tooltip("ƒvƒŒƒCƒ„[")]
+    [SerializeField, Tooltip("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼")]
     private Transform target;
     public int Health => _health;
 
@@ -36,7 +36,7 @@ public class Talis : MonoBehaviour, IDamageable
 
     private bool flag = false;
 
-    [SerializeField, Tooltip("ƒhƒƒbƒvƒAƒCƒeƒ€")]
+    [SerializeField, Tooltip("ãƒ‰ãƒ­ãƒƒãƒ—ã‚¢ã‚¤ãƒ†ãƒ ")]
     private GameObject drop;
 
     public AudioClip talisCrystalShot;
@@ -50,7 +50,7 @@ public class Talis : MonoBehaviour, IDamageable
 
         startPos = gameObject.transform.position;
 
-        //DataBaseQÆ
+        //DataBaseå‚ç…§
         _health = talis.enemyMaxHp;
 
         moveCounter = talis.enemyWalkTime;
@@ -64,14 +64,14 @@ public class Talis : MonoBehaviour, IDamageable
 
     private IEnumerator Pattern1()
     {
-        anim.SetBool("OP", false);      // •Â‚¶‚é
+        anim.SetBool("OP", false);      // é–‰ã˜ã‚‹
 
-        // 1•bŠÔ‘Ò‚Â
+        // 1ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(1f);
 
         isDamage = false;
 
-        anim.SetBool("Rotation", true); //‰ñ“]‚ğn‚ß‚é
+        anim.SetBool("Rotation", true); //å›è»¢ã‚’å§‹ã‚ã‚‹
 
         isRotation = true;
 
@@ -86,7 +86,7 @@ public class Talis : MonoBehaviour, IDamageable
 
             rb.velocity = moveDir * talis.enemyMoveSpeed;
 
-            // 1•bŠÔ‘Ò‚Â
+            // 1ç§’é–“å¾…ã¤
             yield return new WaitForSeconds(1);
         }
 
@@ -94,11 +94,11 @@ public class Talis : MonoBehaviour, IDamageable
 
         moveCounter = talis.enemyWalkTime;
 
-        anim.SetBool("Rotation", false);    //‰ñ“]‚ğ~‚ß‚é
+        anim.SetBool("Rotation", false);    //å›è»¢ã‚’æ­¢ã‚ã‚‹
 
         isRotation = false;
 
-        // 1•bŠÔ‘Ò‚Â
+        // 1ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(1);
 
         if (Vector3.Distance(transform.position, target.transform.position) < talis.enemyRangeToChase)
@@ -114,14 +114,14 @@ public class Talis : MonoBehaviour, IDamageable
 
     private IEnumerator Pattern2()
     {
-        anim.SetBool("OP", true);       //ŠJ‚­
+        anim.SetBool("OP", true);       //é–‹ã
 
-        // 0.5•bŠÔ‘Ò‚Â
+        // 0.5ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(0.5f);
 
         isDamage = true;
 
-        // 0.5•bŠÔ‘Ò‚Â
+        // 0.5ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(0.5f);
 
         tstl.Shot();
@@ -129,17 +129,17 @@ public class Talis : MonoBehaviour, IDamageable
         tsbl.Shot();
         tsbr.Shot();
         audioSource.PlayOneShot(talisCrystalShot);
-        // 1•bŠÔ‘Ò‚Â
+        // 1ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(1f);
 
-        anim.SetBool("OP", false);      // •Â‚¶‚é
+        anim.SetBool("OP", false);      // é–‰ã˜ã‚‹
 
-        // 0.5•bŠÔ‘Ò‚Â
+        // 0.5ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(1f);
 
         isDamage = false;
 
-        // 0.5•bŠÔ‘Ò‚Â
+        // 0.5ç§’é–“å¾…ã¤
         yield return new WaitForSeconds(0.5f);
 
         flag = false;
@@ -168,23 +168,23 @@ public class Talis : MonoBehaviour, IDamageable
                 rb.velocity = Vector2.zero;
             }
 
-            //ƒGƒŠƒAŠO‚És‚©‚È‚¢‚æ‚¤‚É‚·‚é
+            //ã‚¨ãƒªã‚¢å¤–ã«è¡Œã‹ãªã„ã‚ˆã†ã«ã™ã‚‹
 
             float dist = Vector3.Distance(target.transform.position, startPos);
             if (dist > talis.enemyAria)
             {
-                anim.SetBool("OP", false);      // •Â‚¶‚é
+                anim.SetBool("OP", false);      // é–‰ã˜ã‚‹
 
                 isDamage = false;
 
-                anim.SetBool("Rotation", true); //‰ñ“]‚ğn‚ß‚é
+                anim.SetBool("Rotation", true); //å›è»¢ã‚’å§‹ã‚ã‚‹
                 isRotation = true;
 
                 if (startPos.x - 1f <= gameObject.transform.position.x && startPos.x + 1f >= gameObject.transform.position.x && startPos.y - 1f <= gameObject.transform.position.y && startPos.y + 1f >= gameObject.transform.position.y)
                 {
                     rb.velocity = Vector2.zero;
 
-                    anim.SetBool("Rotation", false);    //‰ñ“]‚ğ~‚ß‚é
+                    anim.SetBool("Rotation", false);    //å›è»¢ã‚’æ­¢ã‚ã‚‹
                     isRotation = false;
                 }
                 else
@@ -204,7 +204,7 @@ public class Talis : MonoBehaviour, IDamageable
     }
 
     /// <summary>
-    /// ƒ_ƒ[ƒW‚ğó‚¯‚½‚Æ‚«‚ÌŠÖ”
+    /// ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãŸã¨ãã®é–¢æ•°
     /// </summary>
     /// <param name="damage"></param>
     public void TakeDamage(int damage)
@@ -214,12 +214,12 @@ public class Talis : MonoBehaviour, IDamageable
             if (damage <= 0)
             {
                 _health -= 1;
-                Debug.Log("ƒ^[ƒŠƒX‚ª1ƒ_ƒ[ƒW‚ğó‚¯‚½");
+                Debug.Log("ã‚¿ãƒ¼ãƒªã‚¹ãŒ1ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãŸ");
             }
             else
             {
                 _health -= damage;
-                Debug.Log("ƒ^[ƒŠƒX‚ª" + damage + "ƒ_ƒ[ƒW‚ğó‚¯‚½");
+                Debug.Log("ã‚¿ãƒ¼ãƒªã‚¹ãŒ" + damage + "ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãŸ");
             }
 
             audioSource.PlayOneShot(talisCrystalTakendmg);
@@ -229,15 +229,15 @@ public class Talis : MonoBehaviour, IDamageable
             rb.AddForce(dir * talis.enemyKnockBackPower, ForceMode2D.Impulse);
             blowFlag = true;
         }
-        else Debug.Log("ƒ^[ƒŠƒX‚Íƒ_ƒ[ƒW‚ğó‚¯‚È‚©‚Á‚½");
+        else Debug.Log("ã‚¿ãƒ¼ãƒªã‚¹ã¯ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ãªã‹ã£ãŸ");
 
         if (_health <= 0)
         {
             Destroy(gameObject);
             Instantiate(drop, transform.position, Quaternion.identity);
             GameData.playerexp += talis.enemyExp;
-            Debug.Log("Talis‚ğ“|‚µ‚½");
-            Debug.Log(talis.enemyExp + "‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½");
+            Debug.Log("Talisã‚’å€’ã—ãŸ");
+            Debug.Log(talis.enemyExp + "ã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸ");
         }
     }
 }
